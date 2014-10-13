@@ -1,6 +1,8 @@
 TextBattlez
 ===========
 
+#####*Created with Visual Studio 2012*#####
+===========
 A console text fighting game in c++
 
 Controls:
