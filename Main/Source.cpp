@@ -14,6 +14,21 @@
 using namespace std;
 
 unsigned char color;
+/* colors
+http://www.cplusplus.com/forum/beginner/5830/
+[edit] Oh, yeah, colors are bit-encoded thus:
+
+bit 0 - foreground blue
+bit 1 - foreground green
+bit 2 - foreground red
+bit 3 - foreground intensity
+
+bit 4 - background blue
+bit 5 - background green
+bit 6 - background red
+bit 7 - background intensity
+*/
+
 bool colorsEnabled = 0;
 
 class Player;
@@ -237,7 +252,7 @@ public:
 		}
 	}
 	void subHealth(int amount){
-		color = 0x5B;
+		color = 0x5B; //0101 1011, or bkgrnd red, bkgrnd blue, intense forground green & blue
 		FightingEntity::subHealth(amount);
 	}
 protected:
