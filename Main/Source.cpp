@@ -367,6 +367,7 @@ public:
 	void render(){
 		system("cls");
 		if(colorsEnabled){
+			// TODO: Actually make color byte have effect and not just act as boolean flag
 			if(color){
 				color = 0;
 				system("Color 1A");
