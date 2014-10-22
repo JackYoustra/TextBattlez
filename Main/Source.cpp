@@ -369,8 +369,28 @@ public:
 		if(colorsEnabled){
 			// TODO: Actually make color byte have effect and not just act as boolean flag
 			if(color){
+				char* lColor = "Color @@";
+				// split hex number
+				int firstNum = color%0xF;
+				color/= 0xF;
+				int secondNum = color;
+
+				if(firstNum <= 9){
+					lColor[5] = firstNum+48; // add ASCII offset
+				}
+				else{
+					lColor[5] = firstNum+55; // add ascii offset (A+55 = 65, character code for 'A')
+				}
+				
+				if(secondNum <= 9){
+					lColor[5] = secondNum+48; // add ASCII offset
+				}
+				else{
+					lColor[5] = secondNum+55; // add ascii offset (A+55 = 65, character code for 'A')
+				}
+				
+				system(lColor);
 				color = 0;
-				system("Color 1A");
 			}
 			else{
 				system("Color 0F");
