@@ -371,8 +371,8 @@ public:
 			if(color){
 				char lColor[] = "Color @@";
 				// split hex number doesn't work correctly
-				int firstNum = color%0xF;
-				color/= 0xF;
+				int firstNum = color%0x10; // maybe need to change it to 0x10 (0xF is like 9 for dec)
+				color/= 0x10;
 				int secondNum = color;
 
 				if(firstNum <= 9){
