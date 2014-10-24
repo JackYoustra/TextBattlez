@@ -252,7 +252,7 @@ public:
 		}
 	}
 	void subHealth(int amount){
-		color = 0x5B; //0101 1011, or bkgrnd red, bkgrnd blue, intense forground green & blue
+		color = 0x84; //1000 0100, or foreground red, background intense
 		FightingEntity::subHealth(amount);
 	}
 protected:
@@ -371,9 +371,9 @@ public:
 			if(color){
 				char lColor[] = "Color @@";
 				// split hex number doesn't work correctly
-				int firstNum = color%0x10; // maybe need to change it to 0x10 (0xF is like 9 for dec)
+				int secondNum = color%0x10; // maybe need to change it to 0x10 (0xF is like 9 for dec)
 				color/= 0x10;
-				int secondNum = color;
+				int firstNum = color;
 
 				if(firstNum <= 9){
 					lColor[6] = firstNum+48; // add ASCII offset
@@ -381,12 +381,12 @@ public:
 				else{
 					lColor[6] = firstNum+55; // add ascii offset (A+55 = 65, character code for 'A')
 				}
-				
+
 				if(secondNum <= 9){
 					lColor[7] = secondNum+48; // add ASCII offset
 				}
 				else{
-					lColor[7] = secondNum+55; // add ascii offset (A+55 = 65, character code for 'A')
+					lColor[7] = secondNum+55; // add ascii odffset (A+55 = 65, character code for 'A')
 				}
 				
 				system(lColor);

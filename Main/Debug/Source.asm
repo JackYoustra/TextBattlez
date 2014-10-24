@@ -15585,8 +15585,8 @@ _c$8 = -124						; size = 4
 _r$9 = -112						; size = 4
 _item$10 = -100						; size = 4
 _iter$11 = -88						; size = 12
-_secondNum$12 = -68					; size = 4
-_firstNum$13 = -56					; size = 4
+_firstNum$12 = -68					; size = 4
+_secondNum$13 = -56					; size = 4
 _lColor$14 = -44					; size = 9
 _this$ = -24						; size = 4
 __$ArrayPad$ = -16					; size = 4
@@ -15651,37 +15651,41 @@ __$EHRec$ = -12						; size = 12
 	mov	dl, BYTE PTR ??_C@_08OBFFCDMO@Color?5?$EA?$EA?$AA@+8
 	mov	BYTE PTR _lColor$14[ebp+8], dl
 
-; 373  : 				// split hex number
-; 374  : 				int firstNum = color%15; // 0xF
+; 373  : 				// split hex number doesn't work correctly
+; 374  : 				int secondNum = color%0x10; // maybe need to change it to 0x10 (0xF is like 9 for dec)
+
+	movzx	eax, BYTE PTR ?color@@3EA		; color
+	and	eax, -2147483633			; 8000000fH
+	jns	SHORT $LN28@render
+	dec	eax
+	or	eax, -16				; fffffff0H
+	inc	eax
+$LN28@render:
+	mov	DWORD PTR _secondNum$13[ebp], eax
+
+; 375  : 				color/= 0x10;
 
 	movzx	eax, BYTE PTR ?color@@3EA		; color
 	cdq
-	mov	ecx, 15					; 0000000fH
-	idiv	ecx
-	mov	DWORD PTR _firstNum$13[ebp], edx
-
-; 375  : 				color/= 0xF;
-
-	movzx	eax, BYTE PTR ?color@@3EA		; color
-	cdq
-	mov	ecx, 15					; 0000000fH
-	idiv	ecx
+	and	edx, 15					; 0000000fH
+	add	eax, edx
+	sar	eax, 4
 	mov	BYTE PTR ?color@@3EA, al		; color
 
-; 376  : 				int secondNum = color;
+; 376  : 				int firstNum = color;
 
 	movzx	eax, BYTE PTR ?color@@3EA		; color
-	mov	DWORD PTR _secondNum$12[ebp], eax
+	mov	DWORD PTR _firstNum$12[ebp], eax
 
 ; 377  : 
 ; 378  : 				if(firstNum <= 9){
 
-	cmp	DWORD PTR _firstNum$13[ebp], 9
+	cmp	DWORD PTR _firstNum$12[ebp], 9
 	jg	SHORT $LN14@render
 
 ; 379  : 					lColor[6] = firstNum+48; // add ASCII offset
 
-	mov	eax, DWORD PTR _firstNum$13[ebp]
+	mov	eax, DWORD PTR _firstNum$12[ebp]
 	add	eax, 48					; 00000030H
 	mov	ecx, 1
 	imul	ecx, 6
@@ -15695,7 +15699,7 @@ $LN14@render:
 
 ; 382  : 					lColor[6] = firstNum+55; // add ascii offset (A+55 = 65, character code for 'A')
 
-	mov	eax, DWORD PTR _firstNum$13[ebp]
+	mov	eax, DWORD PTR _firstNum$12[ebp]
 	add	eax, 55					; 00000037H
 	mov	ecx, 1
 	imul	ecx, 6
@@ -15703,15 +15707,15 @@ $LN14@render:
 $LN13@render:
 
 ; 383  : 				}
-; 384  : 				
+; 384  : 
 ; 385  : 				if(secondNum <= 9){
 
-	cmp	DWORD PTR _secondNum$12[ebp], 9
+	cmp	DWORD PTR _secondNum$13[ebp], 9
 	jg	SHORT $LN12@render
 
 ; 386  : 					lColor[7] = secondNum+48; // add ASCII offset
 
-	mov	eax, DWORD PTR _secondNum$12[ebp]
+	mov	eax, DWORD PTR _secondNum$13[ebp]
 	add	eax, 48					; 00000030H
 	mov	ecx, 1
 	imul	ecx, 7
@@ -15723,9 +15727,9 @@ $LN13@render:
 	jmp	SHORT $LN11@render
 $LN12@render:
 
-; 389  : 					lColor[7] = secondNum+55; // add ascii offset (A+55 = 65, character code for 'A')
+; 389  : 					lColor[7] = secondNum+55; // add ascii odffset (A+55 = 65, character code for 'A')
 
-	mov	eax, DWORD PTR _secondNum$12[ebp]
+	mov	eax, DWORD PTR _secondNum$13[ebp]
 	add	eax, 55					; 00000037H
 	mov	ecx, 1
 	imul	ecx, 7
@@ -16000,7 +16004,6 @@ $LN4@render:
 	mov	esp, ebp
 	pop	ebp
 	ret	0
-	npad	1
 $LN27@render:
 	DD	2
 	DD	$LN26@render
@@ -21984,9 +21987,9 @@ _amount$ = 8						; size = 4
 	pop	ecx
 	mov	DWORD PTR _this$[ebp], ecx
 
-; 255  : 		color = 0x5B; //0101 1011, or bkgrnd red, bkgrnd blue, intense forground green & blue
+; 255  : 		color = 0x84; //1000 0100, or foreground red, background intense
 
-	mov	BYTE PTR ?color@@3EA, 91		; color, 0000005bH
+	mov	BYTE PTR ?color@@3EA, 132		; color, 00000084H
 
 ; 256  : 		FightingEntity::subHealth(amount);
 
@@ -26407,11 +26410,11 @@ tv89 = -376						; size = 4
 tv87 = -376						; size = 4
 $T2 = -368						; size = 4
 $T3 = -356						; size = 4
-$T4 = -344						; size = 4
-$T5 = -332						; size = 4
-$T6 = -320						; size = 12
-$T7 = -297						; size = 1
-$T8 = -288						; size = 12
+$T4 = -344						; size = 12
+$T5 = -321						; size = 1
+$T6 = -312						; size = 12
+$T7 = -292						; size = 4
+$T8 = -280						; size = 4
 _item$9 = -76						; size = 4
 _iter$10 = -64						; size = 12
 _sucess$11 = -41					; size = 1
@@ -26486,16 +26489,16 @@ $LN9@renderBull:
 ; 186  : 				delete bullet;
 
 	mov	eax, DWORD PTR _bullet$12[ebp]
-	mov	DWORD PTR $T5[ebp], eax
-	mov	ecx, DWORD PTR $T5[ebp]
-	mov	DWORD PTR $T4[ebp], ecx
-	cmp	DWORD PTR $T4[ebp], 0
+	mov	DWORD PTR $T3[ebp], eax
+	mov	ecx, DWORD PTR $T3[ebp]
+	mov	DWORD PTR $T2[ebp], ecx
+	cmp	DWORD PTR $T2[ebp], 0
 	je	SHORT $LN12@renderBull
 	mov	esi, esp
 	push	1
-	mov	edx, DWORD PTR $T4[ebp]
+	mov	edx, DWORD PTR $T2[ebp]
 	mov	eax, DWORD PTR [edx]
-	mov	ecx, DWORD PTR $T4[ebp]
+	mov	ecx, DWORD PTR $T2[ebp]
 	mov	edx, DWORD PTR [eax]
 	call	edx
 	cmp	esi, esp
@@ -26522,14 +26525,14 @@ $LN6@renderBull:
 	jmp	SHORT $LN4@renderBull
 $LN3@renderBull:
 	push	0
-	lea	eax, DWORD PTR $T6[ebp]
+	lea	eax, DWORD PTR $T4[ebp]
 	push	eax
 	lea	ecx, DWORD PTR _iter$10[ebp]
 	call	??E?$_Vector_iterator@V?$_Vector_val@U?$_Simple_types@PAVLivingEntity@@@std@@@std@@@std@@QAE?AV01@H@Z ; std::_Vector_iterator<std::_Vector_val<std::_Simple_types<LivingEntity *> > >::operator++
-	lea	ecx, DWORD PTR $T6[ebp]
+	lea	ecx, DWORD PTR $T4[ebp]
 	call	??1?$_Vector_iterator@V?$_Vector_val@U?$_Simple_types@PAVLivingEntity@@@std@@@std@@@std@@QAE@XZ
 $LN4@renderBull:
-	lea	eax, DWORD PTR $T8[ebp]
+	lea	eax, DWORD PTR $T6[ebp]
 	push	eax
 	mov	ecx, OFFSET ?livingThings@LivingEntity@@2V?$vector@PAVLivingEntity@@V?$allocator@PAVLivingEntity@@@std@@@std@@A ; LivingEntity::livingThings
 	call	?end@?$vector@PAVLivingEntity@@V?$allocator@PAVLivingEntity@@@std@@@std@@QAE?AV?$_Vector_iterator@V?$_Vector_val@U?$_Simple_types@PAVLivingEntity@@@std@@@std@@@2@XZ ; std::vector<LivingEntity *,std::allocator<LivingEntity *> >::end
@@ -26541,11 +26544,11 @@ $LN4@renderBull:
 	push	edx
 	lea	ecx, DWORD PTR _iter$10[ebp]
 	call	??9?$_Vector_const_iterator@V?$_Vector_val@U?$_Simple_types@PAVLivingEntity@@@std@@@std@@@std@@QBE_NABV01@@Z ; std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<LivingEntity *> > >::operator!=
-	mov	BYTE PTR $T7[ebp], al
+	mov	BYTE PTR $T5[ebp], al
 	mov	BYTE PTR __$EHRec$[ebp+8], 0
-	lea	ecx, DWORD PTR $T8[ebp]
+	lea	ecx, DWORD PTR $T6[ebp]
 	call	??1?$_Vector_iterator@V?$_Vector_val@U?$_Simple_types@PAVLivingEntity@@@std@@@std@@@std@@QAE@XZ
-	movzx	eax, BYTE PTR $T7[ebp]
+	movzx	eax, BYTE PTR $T5[ebp]
 	test	eax, eax
 	je	$LN2@renderBull
 
@@ -26583,16 +26586,16 @@ $LN4@renderBull:
 ; 193  : 						delete bullet;
 
 	mov	eax, DWORD PTR _bullet$12[ebp]
-	mov	DWORD PTR $T3[ebp], eax
-	mov	ecx, DWORD PTR $T3[ebp]
-	mov	DWORD PTR $T2[ebp], ecx
-	cmp	DWORD PTR $T2[ebp], 0
+	mov	DWORD PTR $T8[ebp], eax
+	mov	ecx, DWORD PTR $T8[ebp]
+	mov	DWORD PTR $T7[ebp], ecx
+	cmp	DWORD PTR $T7[ebp], 0
 	je	SHORT $LN14@renderBull
 	mov	esi, esp
 	push	1
-	mov	edx, DWORD PTR $T2[ebp]
+	mov	edx, DWORD PTR $T7[ebp]
 	mov	eax, DWORD PTR [edx]
-	mov	ecx, DWORD PTR $T2[ebp]
+	mov	ecx, DWORD PTR $T7[ebp]
 	mov	edx, DWORD PTR [eax]
 	call	edx
 	cmp	esi, esp
@@ -26668,7 +26671,7 @@ __unwindfunclet$?renderBullets@Bullet@@SAXXZ$0:
 	lea	ecx, DWORD PTR _iter$10[ebp]
 	jmp	??1?$_Vector_iterator@V?$_Vector_val@U?$_Simple_types@PAVLivingEntity@@@std@@@std@@@std@@QAE@XZ
 __unwindfunclet$?renderBullets@Bullet@@SAXXZ$2:
-	lea	ecx, DWORD PTR $T8[ebp]
+	lea	ecx, DWORD PTR $T6[ebp]
 	jmp	??1?$_Vector_iterator@V?$_Vector_val@U?$_Simple_types@PAVLivingEntity@@@std@@@std@@@std@@QAE@XZ
 __ehhandler$?renderBullets@Bullet@@SAXXZ:
 	mov	edx, DWORD PTR [esp+8]
