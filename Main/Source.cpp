@@ -13,7 +13,6 @@
 
 using namespace std;
 
-unsigned char color;
 /* colors
 http://www.cplusplus.com/forum/beginner/5830/
 [edit] Oh, yeah, colors are bit-encoded thus:
@@ -30,10 +29,11 @@ bit 7 - background intensity
 */
 
 bool colorsEnabled = 0;
-
+class Screen;
 class Player;
 class Bullet;
 
+Screen* gameView;
 enum Directions{
 	UP = 2,
 	DOWN = -2,
@@ -251,10 +251,7 @@ public:
 			ammo = magSize;
 		}
 	}
-	void subHealth(int amount){
-		color = 0x84; //1000 0100, or foreground red, background intense
-		FightingEntity::subHealth(amount);
-	}
+	void subHealth(int amount);
 protected:
 	string name;
 	int score;
@@ -354,6 +351,8 @@ class Screen {
 
 public:
 	Screen(char initial, Player *mainPlayer){
+		this->color = 0;
+		this->colorChangedFlag = false;
 		this->blank = initial;
 		this->mainPlayer = mainPlayer;
 		memset(&screen[0][0], initial, sizeof(screen)); // in lieu of double for
@@ -367,33 +366,35 @@ public:
 	void render(){
 		system("cls");
 		if(colorsEnabled){
-			// TODO: Actually make color byte have effect and not just act as boolean flag
-			if(color){
-				char lColor[] = "Color @@";
-				// split hex number doesn't work correctly
-				int secondNum = color%0x10; // maybe need to change it to 0x10 (0xF is like 9 for dec)
-				color/= 0x10;
-				int firstNum = color;
+			if(colorChangedFlag){
+				if(color){
+					char lColor[] = "Color @@";
+					// split hex number doesn't work correctly
+					int secondNum = color%0x10; // maybe need to change it to 0x10 (0xF is like 9 for dec)
+					color/= 0x10;
+					int firstNum = color;
 
-				if(firstNum <= 9){
-					lColor[6] = firstNum+48; // add ASCII offset
-				}
-				else{
-					lColor[6] = firstNum+55; // add ascii offset (A+55 = 65, character code for 'A')
-				}
+					if(firstNum <= 9){
+						lColor[6] = firstNum+48; // add ASCII offset
+					}
+					else{
+						lColor[6] = firstNum+55; // add ascii offset (A+55 = 65, character code for 'A')
+					}
 
-				if(secondNum <= 9){
-					lColor[7] = secondNum+48; // add ASCII offset
-				}
-				else{
-					lColor[7] = secondNum+55; // add ascii odffset (A+55 = 65, character code for 'A')
-				}
+					if(secondNum <= 9){
+						lColor[7] = secondNum+48; // add ASCII offset
+					}
+					else{
+						lColor[7] = secondNum+55; // add ascii odffset (A+55 = 65, character code for 'A')
+					}
 				
-				system(lColor);
-				color = 0;
-			}
-			else{
-				system("Color 0F");
+					system(lColor);
+					color = 0;
+				}
+				else{
+					system("Color 07"); // bit 0, 1, 2
+					colorChangedFlag = false;
+				}
 			}
 		}
 
@@ -410,14 +411,27 @@ public:
 				cout << this->screen[r][c];
 			}
 			cout << "\n";
-		}
-
+		}	
+	}
+	// color getters/setters
+	void setColor(unsigned char color){
+		this->color = color;
+		colorChangedFlag = true;
 	}
 protected:
 	char screen[NUM_OF_ROWS][NUM_OF_COLS];
 	char blank;
 	Player *mainPlayer;
+	unsigned char color;
+private:
+	bool colorChangedFlag;
 };
+
+// things that cannot use forward declarations
+void Player::subHealth(int amount){
+	gameView->setColor(0x84); //1000 0100, or foreground red, background intense
+	FightingEntity::subHealth(amount);
+}
 
 void getInput(Player* player){
 	if(kbhit()){
@@ -502,7 +516,7 @@ int main(){
 	EnemySoldier *soldier2 = new EnemySoldier(10, 5, 10);
 	EnemySoldier *soldier3 = new EnemySoldier(20, 8, 10);
 	EnemySoldier *soldier4 = new EnemySoldier(2, 2, 10);
-	Screen *gameView = new Screen('-', player);
+	gameView = new Screen('-', player);
 
 	pthread_t aiThread;
 	/*cout << typeid(player).name() << endl;

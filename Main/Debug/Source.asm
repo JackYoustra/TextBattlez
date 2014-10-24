@@ -10,19 +10,20 @@ INCLUDELIB MSVCRTD
 INCLUDELIB OLDNAMES
 
 PUBLIC	?max_exponent@?$numeric_limits@O@std@@2HB	; std::numeric_limits<long double>::max_exponent
-PUBLIC	?num@?$ratio@$0PECEA@$00@std@@2_JB		; std::ratio<1000000,1>::num
-PUBLIC	?den@?$ratio@$0PECEA@$00@std@@2_JB		; std::ratio<1000000,1>::den
+PUBLIC	?value@?$_Gcd@$0PECEA@$00@std@@2_JB		; std::_Gcd<1000000,1>::value
 PUBLIC	?max_exponent10@?$numeric_limits@O@std@@2HB	; std::numeric_limits<long double>::max_exponent10
 PUBLIC	?min_exponent@?$numeric_limits@O@std@@2HB	; std::numeric_limits<long double>::min_exponent
+PUBLIC	?num@?$ratio@$0PECEA@$00@std@@2_JB		; std::ratio<1000000,1>::num
+PUBLIC	?den@?$ratio@$0PECEA@$00@std@@2_JB		; std::ratio<1000000,1>::den
 PUBLIC	?min_exponent10@?$numeric_limits@O@std@@2HB	; std::numeric_limits<long double>::min_exponent10
 PUBLIC	?value@?$_Sizeof@HU_Nil@std@@U12@U12@U12@U12@U12@U12@@std@@2IB ; std::_Sizeof<int,std::_Nil,std::_Nil,std::_Nil,std::_Nil,std::_Nil,std::_Nil,std::_Nil>::value
 PUBLIC	?value@?$_Is_duration@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@@chrono@std@@2_NB ; std::chrono::_Is_duration<std::chrono::duration<__int64,std::ratio<1,1000000000> > >::value
 PUBLIC	?value@?$integral_constant@H$0A@@std@@2HB	; std::integral_constant<int,0>::value
 PUBLIC	?value@?$_Is_ratio@U?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@2_NB ; std::chrono::_Is_ratio<std::ratio<1,1000000000> >::value
-PUBLIC	?value@?$_GcdX@$00$0DLJKMKAA@@std@@2_JB		; std::_GcdX<1,1000000000>::value
 PUBLIC	?value@?$_Abs@$0GE@@std@@2_JB			; std::_Abs<100>::value
-PUBLIC	?value@?$_Gcd@$00$0DLJKMKAA@@std@@2_JB		; std::_Gcd<1,1000000000>::value
+PUBLIC	?value@?$_GcdX@$00$0DLJKMKAA@@std@@2_JB		; std::_GcdX<1,1000000000>::value
 PUBLIC	?value@?$_Abs@$0DLJKMKAA@@std@@2_JB		; std::_Abs<1000000000>::value
+PUBLIC	?value@?$_Gcd@$00$0DLJKMKAA@@std@@2_JB		; std::_Gcd<1,1000000000>::value
 PUBLIC	?num@?$ratio@$00$0DLJKMKAA@@std@@2_JB		; std::ratio<1,1000000000>::num
 PUBLIC	?value@?$_Is_duration@V?$duration@_JU?$ratio@$00$00@std@@@chrono@std@@@chrono@std@@2_NB ; std::chrono::_Is_duration<std::chrono::duration<__int64,std::ratio<1,1> > >::value
 PUBLIC	?den@?$ratio@$00$0DLJKMKAA@@std@@2_JB		; std::ratio<1,1000000000>::den
@@ -55,51 +56,51 @@ PUBLIC	?is_steady@system_clock@chrono@std@@2_NB	; std::chrono::system_clock::is_
 PUBLIC	?is_integer@_Num_base@std@@2_NB			; std::_Num_base::is_integer
 PUBLIC	?is_modulo@_Num_base@std@@2_NB			; std::_Num_base::is_modulo
 PUBLIC	?is_signed@_Num_base@std@@2_NB			; std::_Num_base::is_signed
-PUBLIC	?value@?$_Always_false@_J@std@@2_NB		; std::_Always_false<__int64>::value
 PUBLIC	?is_specialized@_Num_base@std@@2_NB		; std::_Num_base::is_specialized
-PUBLIC	?_G1@?$_Ratio_multiply2@U?$ratio@$00$00@std@@U?$ratio@$0DLJKMKAA@$00@2@@std@@2_JB ; std::_Ratio_multiply2<std::ratio<1,1>,std::ratio<1000000000,1> >::_G1
 PUBLIC	?tinyness_before@_Num_base@std@@2_NB		; std::_Num_base::tinyness_before
+PUBLIC	?value@?$_Always_false@_J@std@@2_NB		; std::_Always_false<__int64>::value
 PUBLIC	?traps@_Num_base@std@@2_NB			; std::_Num_base::traps
 PUBLIC	?round_style@_Num_base@std@@2W4float_round_style@2@B ; std::_Num_base::round_style
-PUBLIC	?value@?$_GcdX@$0DLJKMKAA@$00@std@@2_JB		; std::_GcdX<1000000000,1>::value
+PUBLIC	?_G1@?$_Ratio_multiply2@U?$ratio@$00$00@std@@U?$ratio@$0DLJKMKAA@$00@2@@std@@2_JB ; std::_Ratio_multiply2<std::ratio<1,1>,std::ratio<1000000000,1> >::_G1
 PUBLIC	?digits@_Num_base@std@@2HB			; std::_Num_base::digits
 PUBLIC	?collate@?$_Locbase@H@std@@2HB			; std::_Locbase<int>::collate
 PUBLIC	?digits10@_Num_base@std@@2HB			; std::_Num_base::digits10
 PUBLIC	?ctype@?$_Locbase@H@std@@2HB			; std::_Locbase<int>::ctype
 PUBLIC	?monetary@?$_Locbase@H@std@@2HB			; std::_Locbase<int>::monetary
-PUBLIC	?value@?$_Gcd@$0DLJKMKAA@$00@std@@2_JB		; std::_Gcd<1000000000,1>::value
 PUBLIC	?max_digits10@_Num_base@std@@2HB		; std::_Num_base::max_digits10
+PUBLIC	?value@?$_GcdX@$0DLJKMKAA@$00@std@@2_JB		; std::_GcdX<1000000000,1>::value
 PUBLIC	?numeric@?$_Locbase@H@std@@2HB			; std::_Locbase<int>::numeric
 PUBLIC	?max_exponent@_Num_base@std@@2HB		; std::_Num_base::max_exponent
 PUBLIC	?time@?$_Locbase@H@std@@2HB			; std::_Locbase<int>::time
 PUBLIC	?messages@?$_Locbase@H@std@@2HB			; std::_Locbase<int>::messages
 PUBLIC	?max_exponent10@_Num_base@std@@2HB		; std::_Num_base::max_exponent10
-PUBLIC	?_G2@?$_Ratio_multiply2@U?$ratio@$00$00@std@@U?$ratio@$0DLJKMKAA@$00@2@@std@@2_JB ; std::_Ratio_multiply2<std::ratio<1,1>,std::ratio<1000000000,1> >::_G2
 PUBLIC	?all@?$_Locbase@H@std@@2HB			; std::_Locbase<int>::all
+PUBLIC	?value@?$_Gcd@$0DLJKMKAA@$00@std@@2_JB		; std::_Gcd<1000000000,1>::value
 PUBLIC	?min_exponent@_Num_base@std@@2HB		; std::_Num_base::min_exponent
 PUBLIC	?none@?$_Locbase@H@std@@2HB			; std::_Locbase<int>::none
 PUBLIC	?min_exponent10@_Num_base@std@@2HB		; std::_Num_base::min_exponent10
 PUBLIC	?radix@_Num_base@std@@2HB			; std::_Num_base::radix
+PUBLIC	?_G2@?$_Ratio_multiply2@U?$ratio@$00$00@std@@U?$ratio@$0DLJKMKAA@$00@2@@std@@2_JB ; std::_Ratio_multiply2<std::ratio<1,1>,std::ratio<1000000000,1> >::_G2
 PUBLIC	?is_bounded@_Num_int_base@std@@2_NB		; std::_Num_int_base::is_bounded
 PUBLIC	?is_exact@_Num_int_base@std@@2_NB		; std::_Num_int_base::is_exact
-PUBLIC	?num@?$ratio@$0DLJKMKAA@$00@std@@2_JB		; std::ratio<1000000000,1>::num
-PUBLIC	?den@?$ratio@$0DLJKMKAA@$00@std@@2_JB		; std::ratio<1000000000,1>::den
 PUBLIC	?is_integer@_Num_int_base@std@@2_NB		; std::_Num_int_base::is_integer
 PUBLIC	?is_modulo@_Num_int_base@std@@2_NB		; std::_Num_int_base::is_modulo
 PUBLIC	?skipws@?$_Iosb@H@std@@2W4_Fmtflags@12@B	; std::_Iosb<int>::skipws
+PUBLIC	?num@?$ratio@$0DLJKMKAA@$00@std@@2_JB		; std::ratio<1000000000,1>::num
 PUBLIC	?unitbuf@?$_Iosb@H@std@@2W4_Fmtflags@12@B	; std::_Iosb<int>::unitbuf
 PUBLIC	?is_specialized@_Num_int_base@std@@2_NB		; std::_Num_int_base::is_specialized
+PUBLIC	?den@?$ratio@$0DLJKMKAA@$00@std@@2_JB		; std::ratio<1000000000,1>::den
 PUBLIC	?radix@_Num_int_base@std@@2HB			; std::_Num_int_base::radix
 PUBLIC	?uppercase@?$_Iosb@H@std@@2W4_Fmtflags@12@B	; std::_Iosb<int>::uppercase
 PUBLIC	?showbase@?$_Iosb@H@std@@2W4_Fmtflags@12@B	; std::_Iosb<int>::showbase
 PUBLIC	?showpoint@?$_Iosb@H@std@@2W4_Fmtflags@12@B	; std::_Iosb<int>::showpoint
-PUBLIC	?_G1@?$_Ratio_multiply2@U?$ratio@$00$00@std@@U12@@std@@2_JB ; std::_Ratio_multiply2<std::ratio<1,1>,std::ratio<1,1> >::_G1
-PUBLIC	?_G2@?$_Ratio_multiply2@U?$ratio@$00$00@std@@U12@@std@@2_JB ; std::_Ratio_multiply2<std::ratio<1,1>,std::ratio<1,1> >::_G2
 PUBLIC	?showpos@?$_Iosb@H@std@@2W4_Fmtflags@12@B	; std::_Iosb<int>::showpos
 PUBLIC	?has_denorm@_Num_float_base@std@@2W4float_denorm_style@2@B ; std::_Num_float_base::has_denorm
 PUBLIC	?left@?$_Iosb@H@std@@2W4_Fmtflags@12@B		; std::_Iosb<int>::left
 PUBLIC	?has_denorm_loss@_Num_float_base@std@@2_NB	; std::_Num_float_base::has_denorm_loss
+PUBLIC	?_G1@?$_Ratio_multiply2@U?$ratio@$00$00@std@@U12@@std@@2_JB ; std::_Ratio_multiply2<std::ratio<1,1>,std::ratio<1,1> >::_G1
 PUBLIC	?right@?$_Iosb@H@std@@2W4_Fmtflags@12@B		; std::_Iosb<int>::right
+PUBLIC	?_G2@?$_Ratio_multiply2@U?$ratio@$00$00@std@@U12@@std@@2_JB ; std::_Ratio_multiply2<std::ratio<1,1>,std::ratio<1,1> >::_G2
 PUBLIC	?has_infinity@_Num_float_base@std@@2_NB		; std::_Num_float_base::has_infinity
 PUBLIC	?internal@?$_Iosb@H@std@@2W4_Fmtflags@12@B	; std::_Iosb<int>::internal
 PUBLIC	?has_quiet_NaN@_Num_float_base@std@@2_NB	; std::_Num_float_base::has_quiet_NaN
@@ -138,10 +139,10 @@ PUBLIC	?ate@?$_Iosb@H@std@@2W4_Openmode@12@B		; std::_Iosb<int>::ate
 PUBLIC	?digits@?$numeric_limits@D@std@@2HB		; std::numeric_limits<char>::digits
 PUBLIC	?digits10@?$numeric_limits@D@std@@2HB		; std::numeric_limits<char>::digits10
 PUBLIC	?app@?$_Iosb@H@std@@2W4_Openmode@12@B		; std::_Iosb<int>::app
-PUBLIC	?value@?$_Is_ratio@U?$ratio@$00$00@std@@@chrono@std@@2_NB ; std::chrono::_Is_ratio<std::ratio<1,1> >::value
 PUBLIC	?trunc@?$_Iosb@H@std@@2W4_Openmode@12@B		; std::_Iosb<int>::trunc
 PUBLIC	?_Nocreate@?$_Iosb@H@std@@2W4_Openmode@12@B	; std::_Iosb<int>::_Nocreate
 PUBLIC	?_Noreplace@?$_Iosb@H@std@@2W4_Openmode@12@B	; std::_Iosb<int>::_Noreplace
+PUBLIC	?value@?$_Is_ratio@U?$ratio@$00$00@std@@@chrono@std@@2_NB ; std::chrono::_Is_ratio<std::ratio<1,1> >::value
 PUBLIC	?_S_cancelBitsMask@_TaskCollectionBase@details@Concurrency@@1IB ; Concurrency::details::_TaskCollectionBase::_S_cancelBitsMask
 PUBLIC	?binary@?$_Iosb@H@std@@2W4_Openmode@12@B	; std::_Iosb<int>::binary
 PUBLIC	?_S_cancelNone@_TaskCollectionBase@details@Concurrency@@1IB ; Concurrency::details::_TaskCollectionBase::_S_cancelNone
@@ -161,19 +162,19 @@ PUBLIC	?_S_reserved@_TaskCollectionBase@details@Concurrency@@1HB ; Concurrency::
 PUBLIC	?digits@?$numeric_limits@_W@std@@2HB		; std::numeric_limits<wchar_t>::digits
 PUBLIC	?digits10@?$numeric_limits@_W@std@@2HB		; std::numeric_limits<wchar_t>::digits10
 PUBLIC	?_Stream_err@failure@ios_base@std@@0W4io_errc@43@B ; std::ios_base::failure::_Stream_err
-PUBLIC	?value@?$_Is_ratio@U?$ratio@$00$0JIJGIA@@std@@@chrono@std@@2_NB ; std::chrono::_Is_ratio<std::ratio<1,10000000> >::value
 PUBLIC	?is_modulo@?$numeric_limits@_N@std@@2_NB	; std::numeric_limits<bool>::is_modulo
 PUBLIC	?is_signed@?$numeric_limits@_N@std@@2_NB	; std::numeric_limits<bool>::is_signed
+PUBLIC	?value@?$_Is_ratio@U?$ratio@$00$0JIJGIA@@std@@@chrono@std@@2_NB ; std::chrono::_Is_ratio<std::ratio<1,10000000> >::value
 PUBLIC	?digits@?$numeric_limits@_N@std@@2HB		; std::numeric_limits<bool>::digits
 PUBLIC	?digits10@?$numeric_limits@_N@std@@2HB		; std::numeric_limits<bool>::digits10
 PUBLIC	?value@?$_GcdX@$0JIJGIA@$00@std@@2_JB		; std::_GcdX<10000000,1>::value
 PUBLIC	?value@?$_GcdX@$00$0JIJGIA@@std@@2_JB		; std::_GcdX<1,10000000>::value
 PUBLIC	?value@?$_Gcd@$00$0JIJGIA@@std@@2_JB		; std::_Gcd<1,10000000>::value
 PUBLIC	?is_signed@?$numeric_limits@C@std@@2_NB		; std::numeric_limits<signed char>::is_signed
-PUBLIC	?num@?$ratio@$00$0JIJGIA@@std@@2_JB		; std::ratio<1,10000000>::num
-PUBLIC	?den@?$ratio@$00$0JIJGIA@@std@@2_JB		; std::ratio<1,10000000>::den
 PUBLIC	?digits@?$numeric_limits@C@std@@2HB		; std::numeric_limits<signed char>::digits
 PUBLIC	?digits10@?$numeric_limits@C@std@@2HB		; std::numeric_limits<signed char>::digits10
+PUBLIC	?num@?$ratio@$00$0JIJGIA@@std@@2_JB		; std::ratio<1,10000000>::num
+PUBLIC	?den@?$ratio@$00$0JIJGIA@@std@@2_JB		; std::ratio<1,10000000>::den
 PUBLIC	?is_signed@?$numeric_limits@E@std@@2_NB		; std::numeric_limits<unsigned char>::is_signed
 PUBLIC	?digits@?$numeric_limits@E@std@@2HB		; std::numeric_limits<unsigned char>::digits
 PUBLIC	?_G1@?$_Ratio_multiply2@U?$ratio@$00$0JIJGIA@@std@@U?$ratio@$0JIJGIA@$00@2@@std@@2_JB ; std::_Ratio_multiply2<std::ratio<1,10000000>,std::ratio<10000000,1> >::_G1
@@ -192,43 +193,43 @@ PUBLIC	?value@?$integral_constant@I$0A@@std@@2IB	; std::integral_constant<unsign
 PUBLIC	?is_signed@?$numeric_limits@G@std@@2_NB		; std::numeric_limits<unsigned short>::is_signed
 PUBLIC	?digits@?$numeric_limits@G@std@@2HB		; std::numeric_limits<unsigned short>::digits
 PUBLIC	?digits10@?$numeric_limits@G@std@@2HB		; std::numeric_limits<unsigned short>::digits10
-PUBLIC	?value@?$_Is_ratio@U?$ratio@$00$0DOI@@std@@@chrono@std@@2_NB ; std::chrono::_Is_ratio<std::ratio<1,1000> >::value
 PUBLIC	?num@?$ratio@$00$00@std@@2_JB			; std::ratio<1,1>::num
 PUBLIC	?den@?$ratio@$00$00@std@@2_JB			; std::ratio<1,1>::den
-PUBLIC	?value@?$_Abs@$0DOI@@std@@2_JB			; std::_Abs<1000>::value
-PUBLIC	?_Gx@?$_Lcm@$0DOI@$0DOI@@std@@2_JB		; std::_Lcm<1000,1000>::_Gx
+PUBLIC	?value@?$_Is_ratio@U?$ratio@$00$0DOI@@std@@@chrono@std@@2_NB ; std::chrono::_Is_ratio<std::ratio<1,1000> >::value
 PUBLIC	?is_signed@?$numeric_limits@H@std@@2_NB		; std::numeric_limits<int>::is_signed
-PUBLIC	?value@?$_Lcm@$0DOI@$0DOI@@std@@2_JB		; std::_Lcm<1000,1000>::value
+PUBLIC	?value@?$_Abs@$0DOI@@std@@2_JB			; std::_Abs<1000>::value
 PUBLIC	?digits@?$numeric_limits@H@std@@2HB		; std::numeric_limits<int>::digits
+PUBLIC	?_Gx@?$_Lcm@$0DOI@$0DOI@@std@@2_JB		; std::_Lcm<1000,1000>::_Gx
 PUBLIC	?digits10@?$numeric_limits@H@std@@2HB		; std::numeric_limits<int>::digits10
+PUBLIC	?value@?$_Lcm@$0DOI@$0DOI@@std@@2_JB		; std::_Lcm<1000,1000>::value
 PUBLIC	?value@?$_GcdX@$0DOI@$00@std@@2_JB		; std::_GcdX<1000,1>::value
-PUBLIC	?value@?$_GcdX@$00$0DOI@@std@@2_JB		; std::_GcdX<1,1000>::value
-PUBLIC	?color@@3EA					; color
 PUBLIC	?colorsEnabled@@3_NA				; colorsEnabled
+PUBLIC	?gameView@@3PAVScreen@@A			; gameView
+PUBLIC	?value@?$_GcdX@$00$0DOI@@std@@2_JB		; std::_GcdX<1,1000>::value
 PUBLIC	?value@?$_Gcd@$00$0DOI@@std@@2_JB		; std::_Gcd<1,1000>::value
-PUBLIC	?num@?$ratio@$00$0DOI@@std@@2_JB		; std::ratio<1,1000>::num
-PUBLIC	?den@?$ratio@$00$0DOI@@std@@2_JB		; std::ratio<1,1000>::den
 PUBLIC	?is_signed@?$numeric_limits@I@std@@2_NB		; std::numeric_limits<unsigned int>::is_signed
+PUBLIC	?num@?$ratio@$00$0DOI@@std@@2_JB		; std::ratio<1,1000>::num
 PUBLIC	?digits@?$numeric_limits@I@std@@2HB		; std::numeric_limits<unsigned int>::digits
+PUBLIC	?den@?$ratio@$00$0DOI@@std@@2_JB		; std::ratio<1,1000>::den
 PUBLIC	?digits10@?$numeric_limits@I@std@@2HB		; std::numeric_limits<unsigned int>::digits10
 PUBLIC	?value@?$_Sizeof@U_Nil@std@@U12@U12@U12@U12@U12@U12@U12@@std@@2IB ; std::_Sizeof<std::_Nil,std::_Nil,std::_Nil,std::_Nil,std::_Nil,std::_Nil,std::_Nil,std::_Nil>::value
-PUBLIC	?_G1@?$_Ratio_multiply2@U?$ratio@$00$0DLJKMKAA@@std@@U?$ratio@$0DLJKMKAA@$00@2@@std@@2_JB ; std::_Ratio_multiply2<std::ratio<1,1000000000>,std::ratio<1000000000,1> >::_G1
 PUBLIC	?is_signed@?$numeric_limits@J@std@@2_NB		; std::numeric_limits<long>::is_signed
+PUBLIC	?_G1@?$_Ratio_multiply2@U?$ratio@$00$0DLJKMKAA@@std@@U?$ratio@$0DLJKMKAA@$00@2@@std@@2_JB ; std::_Ratio_multiply2<std::ratio<1,1000000000>,std::ratio<1000000000,1> >::_G1
 PUBLIC	?digits@?$numeric_limits@J@std@@2HB		; std::numeric_limits<long>::digits
-PUBLIC	?value@?$_GcdX@$0DLJKMKAA@$0A@@std@@2_JB	; std::_GcdX<1000000000,0>::value
 PUBLIC	?digits10@?$numeric_limits@J@std@@2HB		; std::numeric_limits<long>::digits10
 PUBLIC	?is_monotonic@steady_clock@chrono@std@@2_NB	; std::chrono::steady_clock::is_monotonic
 PUBLIC	?is_steady@steady_clock@chrono@std@@2_NB	; std::chrono::steady_clock::is_steady
+PUBLIC	?value@?$_GcdX@$0DLJKMKAA@$0A@@std@@2_JB	; std::_GcdX<1000000000,0>::value
 PUBLIC	?value@?$_GcdX@$0DLJKMKAA@$0DLJKMKAA@@std@@2_JB	; std::_GcdX<1000000000,1000000000>::value
 PUBLIC	?_G1@?$_Ratio_multiply2@U?$ratio@$00$0JIJGIA@@std@@U?$ratio@$0DLJKMKAA@$00@2@@std@@2_JB ; std::_Ratio_multiply2<std::ratio<1,10000000>,std::ratio<1000000000,1> >::_G1
 PUBLIC	?value@?$_Gcd@$0DLJKMKAA@$0DLJKMKAA@@std@@2_JB	; std::_Gcd<1000000000,1000000000>::value
 PUBLIC	?value@?$_GcdX@$0DLJKMKAA@$0JIJGIA@@std@@2_JB	; std::_GcdX<1000000000,10000000>::value
 PUBLIC	?_G2@?$_Ratio_multiply2@U?$ratio@$00$0DLJKMKAA@@std@@U?$ratio@$0DLJKMKAA@$00@2@@std@@2_JB ; std::_Ratio_multiply2<std::ratio<1,1000000000>,std::ratio<1000000000,1> >::_G2
-PUBLIC	?value@?$_Gcd@$0DLJKMKAA@$0JIJGIA@@std@@2_JB	; std::_Gcd<1000000000,10000000>::value
 PUBLIC	?is_signed@?$numeric_limits@K@std@@2_NB		; std::numeric_limits<unsigned long>::is_signed
-PUBLIC	?_G2@?$_Ratio_multiply2@U?$ratio@$00$0JIJGIA@@std@@U?$ratio@$0DLJKMKAA@$00@2@@std@@2_JB ; std::_Ratio_multiply2<std::ratio<1,10000000>,std::ratio<1000000000,1> >::_G2
+PUBLIC	?value@?$_Gcd@$0DLJKMKAA@$0JIJGIA@@std@@2_JB	; std::_Gcd<1000000000,10000000>::value
 PUBLIC	?digits@?$numeric_limits@K@std@@2HB		; std::numeric_limits<unsigned long>::digits
 PUBLIC	?digits10@?$numeric_limits@K@std@@2HB		; std::numeric_limits<unsigned long>::digits10
+PUBLIC	?_G2@?$_Ratio_multiply2@U?$ratio@$00$0JIJGIA@@std@@U?$ratio@$0DLJKMKAA@$00@2@@std@@2_JB ; std::_Ratio_multiply2<std::ratio<1,10000000>,std::ratio<1000000000,1> >::_G2
 PUBLIC	_ConcRT_ProviderGuid
 PUBLIC	_ConcRTEventGuid
 PUBLIC	_SchedulerEventGuid
@@ -248,19 +249,19 @@ PUBLIC	?digits10@?$numeric_limits@_J@std@@2HB		; std::numeric_limits<__int64>::d
 PUBLIC	?value@?$_GcdX@$0GE@$00@std@@2_JB		; std::_GcdX<100,1>::value
 PUBLIC	?value@?$_Gcd@$0GE@$00@std@@2_JB		; std::_Gcd<100,1>::value
 PUBLIC	?num@?$ratio@$0GE@$00@std@@2_JB			; std::ratio<100,1>::num
-PUBLIC	?den@?$ratio@$0GE@$00@std@@2_JB			; std::ratio<100,1>::den
 PUBLIC	?is_signed@?$numeric_limits@_K@std@@2_NB	; std::numeric_limits<unsigned __int64>::is_signed
+PUBLIC	?den@?$ratio@$0GE@$00@std@@2_JB			; std::ratio<100,1>::den
 PUBLIC	?digits@?$numeric_limits@_K@std@@2HB		; std::numeric_limits<unsigned __int64>::digits
 PUBLIC	?digits10@?$numeric_limits@_K@std@@2HB		; std::numeric_limits<unsigned __int64>::digits10
 PUBLIC	?digits@?$numeric_limits@M@std@@2HB		; std::numeric_limits<float>::digits
 PUBLIC	?digits10@?$numeric_limits@M@std@@2HB		; std::numeric_limits<float>::digits10
-PUBLIC	?_G1@?$_Ratio_multiply2@U?$ratio@$00$0DOI@@std@@U?$ratio@$0DLJKMKAA@$00@2@@std@@2_JB ; std::_Ratio_multiply2<std::ratio<1,1000>,std::ratio<1000000000,1> >::_G1
 PUBLIC	?max_digits10@?$numeric_limits@M@std@@2HB	; std::numeric_limits<float>::max_digits10
 PUBLIC	?max_exponent@?$numeric_limits@M@std@@2HB	; std::numeric_limits<float>::max_exponent
+PUBLIC	?_G1@?$_Ratio_multiply2@U?$ratio@$00$0DOI@@std@@U?$ratio@$0DLJKMKAA@$00@2@@std@@2_JB ; std::_Ratio_multiply2<std::ratio<1,1000>,std::ratio<1000000000,1> >::_G1
 PUBLIC	?max_exponent10@?$numeric_limits@M@std@@2HB	; std::numeric_limits<float>::max_exponent10
-PUBLIC	?value@?$_GcdX@$0DOI@$0A@@std@@2_JB		; std::_GcdX<1000,0>::value
 PUBLIC	?min_exponent@?$numeric_limits@M@std@@2HB	; std::numeric_limits<float>::min_exponent
 PUBLIC	?min_exponent10@?$numeric_limits@M@std@@2HB	; std::numeric_limits<float>::min_exponent10
+PUBLIC	?value@?$_GcdX@$0DOI@$0A@@std@@2_JB		; std::_GcdX<1000,0>::value
 PUBLIC	?value@?$_GcdX@$0DLJKMKAA@$0DOI@@std@@2_JB	; std::_GcdX<1000000000,1000>::value
 PUBLIC	?value@?$_Gcd@$0DLJKMKAA@$0DOI@@std@@2_JB	; std::_Gcd<1000000000,1000>::value
 PUBLIC	?_G2@?$_Ratio_multiply2@U?$ratio@$00$0DOI@@std@@U?$ratio@$0DLJKMKAA@$00@2@@std@@2_JB ; std::_Ratio_multiply2<std::ratio<1,1000>,std::ratio<1000000000,1> >::_G2
@@ -268,23 +269,24 @@ PUBLIC	?digits@?$numeric_limits@N@std@@2HB		; std::numeric_limits<double>::digit
 PUBLIC	?digits10@?$numeric_limits@N@std@@2HB		; std::numeric_limits<double>::digits10
 PUBLIC	?max_digits10@?$numeric_limits@N@std@@2HB	; std::numeric_limits<double>::max_digits10
 PUBLIC	?max_exponent@?$numeric_limits@N@std@@2HB	; std::numeric_limits<double>::max_exponent
-PUBLIC	?_G1@?$_Ratio_multiply2@U?$ratio@$00$0DOI@@std@@U?$ratio@$0DOI@$00@2@@std@@2_JB ; std::_Ratio_multiply2<std::ratio<1,1000>,std::ratio<1000,1> >::_G1
 PUBLIC	?max_exponent10@?$numeric_limits@N@std@@2HB	; std::numeric_limits<double>::max_exponent10
 PUBLIC	?min_exponent@?$numeric_limits@N@std@@2HB	; std::numeric_limits<double>::min_exponent
-PUBLIC	?value@?$_GcdX@$0DOI@$0DOI@@std@@2_JB		; std::_GcdX<1000,1000>::value
+PUBLIC	?_G1@?$_Ratio_multiply2@U?$ratio@$00$0DOI@@std@@U?$ratio@$0DOI@$00@2@@std@@2_JB ; std::_Ratio_multiply2<std::ratio<1,1000>,std::ratio<1000,1> >::_G1
 PUBLIC	?min_exponent10@?$numeric_limits@N@std@@2HB	; std::numeric_limits<double>::min_exponent10
+PUBLIC	?value@?$_GcdX@$0DOI@$0DOI@@std@@2_JB		; std::_GcdX<1000,1000>::value
 PUBLIC	?ai_player_mutex@@3PAUpthread_mutex_t_@@A	; ai_player_mutex
 PUBLIC	?value@?$_Gcd@$0DOI@$0DOI@@std@@2_JB		; std::_Gcd<1000,1000>::value
 PUBLIC	?value@?$_Abs@$0PECEA@@std@@2_JB		; std::_Abs<1000000>::value
 PUBLIC	?_G2@?$_Ratio_multiply2@U?$ratio@$00$0DOI@@std@@U?$ratio@$0DOI@$00@2@@std@@2_JB ; std::_Ratio_multiply2<std::ratio<1,1000>,std::ratio<1000,1> >::_G2
-PUBLIC	?value@?$_GcdX@$0PECEA@$00@std@@2_JB		; std::_GcdX<1000000,1>::value
 PUBLIC	?digits@?$numeric_limits@O@std@@2HB		; std::numeric_limits<long double>::digits
-PUBLIC	?value@?$_Gcd@$0PECEA@$00@std@@2_JB		; std::_Gcd<1000000,1>::value
+PUBLIC	?value@?$_GcdX@$0PECEA@$00@std@@2_JB		; std::_GcdX<1000000,1>::value
 PUBLIC	?digits10@?$numeric_limits@O@std@@2HB		; std::numeric_limits<long double>::digits10
 PUBLIC	?max_digits10@?$numeric_limits@O@std@@2HB	; std::numeric_limits<long double>::max_digits10
 _BSS	SEGMENT
-?color@@3EA DB	01H DUP (?)				; color
 ?colorsEnabled@@3_NA DB 01H DUP (?)			; colorsEnabled
+	ALIGN	4
+
+?gameView@@3PAVScreen@@A DD 01H DUP (?)			; gameView
 _BSS	ENDS
 ;	COMDAT ?max_digits10@?$numeric_limits@O@std@@2HB
 CONST	SEGMENT
@@ -294,17 +296,13 @@ CONST	ENDS
 CONST	SEGMENT
 ?digits10@?$numeric_limits@O@std@@2HB DD 0fH		; std::numeric_limits<long double>::digits10
 CONST	ENDS
-;	COMDAT ?value@?$_Gcd@$0PECEA@$00@std@@2_JB
+;	COMDAT ?value@?$_GcdX@$0PECEA@$00@std@@2_JB
 CONST	SEGMENT
-?value@?$_Gcd@$0PECEA@$00@std@@2_JB DQ 0000000000000001H ; std::_Gcd<1000000,1>::value
+?value@?$_GcdX@$0PECEA@$00@std@@2_JB DQ 0000000000000001H ; std::_GcdX<1000000,1>::value
 CONST	ENDS
 ;	COMDAT ?digits@?$numeric_limits@O@std@@2HB
 CONST	SEGMENT
 ?digits@?$numeric_limits@O@std@@2HB DD 035H		; std::numeric_limits<long double>::digits
-CONST	ENDS
-;	COMDAT ?value@?$_GcdX@$0PECEA@$00@std@@2_JB
-CONST	SEGMENT
-?value@?$_GcdX@$0PECEA@$00@std@@2_JB DQ 0000000000000001H ; std::_GcdX<1000000,1>::value
 CONST	ENDS
 ;	COMDAT ?_G2@?$_Ratio_multiply2@U?$ratio@$00$0DOI@@std@@U?$ratio@$0DOI@$00@2@@std@@2_JB
 CONST	SEGMENT
@@ -321,13 +319,17 @@ CONST	ENDS
 _DATA	SEGMENT
 ?ai_player_mutex@@3PAUpthread_mutex_t_@@A DD 0ffffffffH	; ai_player_mutex
 _DATA	ENDS
+;	COMDAT ?value@?$_GcdX@$0DOI@$0DOI@@std@@2_JB
+CONST	SEGMENT
+?value@?$_GcdX@$0DOI@$0DOI@@std@@2_JB DQ 00000000000003e8H ; std::_GcdX<1000,1000>::value
+CONST	ENDS
 ;	COMDAT ?min_exponent10@?$numeric_limits@N@std@@2HB
 CONST	SEGMENT
 ?min_exponent10@?$numeric_limits@N@std@@2HB DD 0fffffecdH ; std::numeric_limits<double>::min_exponent10
 CONST	ENDS
-;	COMDAT ?value@?$_GcdX@$0DOI@$0DOI@@std@@2_JB
+;	COMDAT ?_G1@?$_Ratio_multiply2@U?$ratio@$00$0DOI@@std@@U?$ratio@$0DOI@$00@2@@std@@2_JB
 CONST	SEGMENT
-?value@?$_GcdX@$0DOI@$0DOI@@std@@2_JB DQ 00000000000003e8H ; std::_GcdX<1000,1000>::value
+?_G1@?$_Ratio_multiply2@U?$ratio@$00$0DOI@@std@@U?$ratio@$0DOI@$00@2@@std@@2_JB DQ 0000000000000001H ; std::_Ratio_multiply2<std::ratio<1,1000>,std::ratio<1000,1> >::_G1
 CONST	ENDS
 ;	COMDAT ?min_exponent@?$numeric_limits@N@std@@2HB
 CONST	SEGMENT
@@ -336,10 +338,6 @@ CONST	ENDS
 ;	COMDAT ?max_exponent10@?$numeric_limits@N@std@@2HB
 CONST	SEGMENT
 ?max_exponent10@?$numeric_limits@N@std@@2HB DD 0134H	; std::numeric_limits<double>::max_exponent10
-CONST	ENDS
-;	COMDAT ?_G1@?$_Ratio_multiply2@U?$ratio@$00$0DOI@@std@@U?$ratio@$0DOI@$00@2@@std@@2_JB
-CONST	SEGMENT
-?_G1@?$_Ratio_multiply2@U?$ratio@$00$0DOI@@std@@U?$ratio@$0DOI@$00@2@@std@@2_JB DQ 0000000000000001H ; std::_Ratio_multiply2<std::ratio<1,1000>,std::ratio<1000,1> >::_G1
 CONST	ENDS
 ;	COMDAT ?max_exponent@?$numeric_limits@N@std@@2HB
 CONST	SEGMENT
@@ -369,6 +367,10 @@ CONST	ENDS
 CONST	SEGMENT
 ?value@?$_GcdX@$0DLJKMKAA@$0DOI@@std@@2_JB DQ 00000000000003e8H ; std::_GcdX<1000000000,1000>::value
 CONST	ENDS
+;	COMDAT ?value@?$_GcdX@$0DOI@$0A@@std@@2_JB
+CONST	SEGMENT
+?value@?$_GcdX@$0DOI@$0A@@std@@2_JB DQ 00000000000003e8H ; std::_GcdX<1000,0>::value
+CONST	ENDS
 ;	COMDAT ?min_exponent10@?$numeric_limits@M@std@@2HB
 CONST	SEGMENT
 ?min_exponent10@?$numeric_limits@M@std@@2HB DD 0ffffffdbH ; std::numeric_limits<float>::min_exponent10
@@ -377,13 +379,13 @@ CONST	ENDS
 CONST	SEGMENT
 ?min_exponent@?$numeric_limits@M@std@@2HB DD 0ffffff83H	; std::numeric_limits<float>::min_exponent
 CONST	ENDS
-;	COMDAT ?value@?$_GcdX@$0DOI@$0A@@std@@2_JB
-CONST	SEGMENT
-?value@?$_GcdX@$0DOI@$0A@@std@@2_JB DQ 00000000000003e8H ; std::_GcdX<1000,0>::value
-CONST	ENDS
 ;	COMDAT ?max_exponent10@?$numeric_limits@M@std@@2HB
 CONST	SEGMENT
 ?max_exponent10@?$numeric_limits@M@std@@2HB DD 026H	; std::numeric_limits<float>::max_exponent10
+CONST	ENDS
+;	COMDAT ?_G1@?$_Ratio_multiply2@U?$ratio@$00$0DOI@@std@@U?$ratio@$0DLJKMKAA@$00@2@@std@@2_JB
+CONST	SEGMENT
+?_G1@?$_Ratio_multiply2@U?$ratio@$00$0DOI@@std@@U?$ratio@$0DLJKMKAA@$00@2@@std@@2_JB DQ 0000000000000001H ; std::_Ratio_multiply2<std::ratio<1,1000>,std::ratio<1000000000,1> >::_G1
 CONST	ENDS
 ;	COMDAT ?max_exponent@?$numeric_limits@M@std@@2HB
 CONST	SEGMENT
@@ -392,10 +394,6 @@ CONST	ENDS
 ;	COMDAT ?max_digits10@?$numeric_limits@M@std@@2HB
 CONST	SEGMENT
 ?max_digits10@?$numeric_limits@M@std@@2HB DD 09H	; std::numeric_limits<float>::max_digits10
-CONST	ENDS
-;	COMDAT ?_G1@?$_Ratio_multiply2@U?$ratio@$00$0DOI@@std@@U?$ratio@$0DLJKMKAA@$00@2@@std@@2_JB
-CONST	SEGMENT
-?_G1@?$_Ratio_multiply2@U?$ratio@$00$0DOI@@std@@U?$ratio@$0DLJKMKAA@$00@2@@std@@2_JB DQ 0000000000000001H ; std::_Ratio_multiply2<std::ratio<1,1000>,std::ratio<1000000000,1> >::_G1
 CONST	ENDS
 ;	COMDAT ?digits10@?$numeric_limits@M@std@@2HB
 CONST	SEGMENT
@@ -413,13 +411,13 @@ CONST	ENDS
 CONST	SEGMENT
 ?digits@?$numeric_limits@_K@std@@2HB DD 040H		; std::numeric_limits<unsigned __int64>::digits
 CONST	ENDS
-;	COMDAT ?is_signed@?$numeric_limits@_K@std@@2_NB
-CONST	SEGMENT
-?is_signed@?$numeric_limits@_K@std@@2_NB DB 00H		; std::numeric_limits<unsigned __int64>::is_signed
-CONST	ENDS
 ;	COMDAT ?den@?$ratio@$0GE@$00@std@@2_JB
 CONST	SEGMENT
 ?den@?$ratio@$0GE@$00@std@@2_JB DQ 0000000000000001H	; std::ratio<100,1>::den
+CONST	ENDS
+;	COMDAT ?is_signed@?$numeric_limits@_K@std@@2_NB
+CONST	SEGMENT
+?is_signed@?$numeric_limits@_K@std@@2_NB DB 00H		; std::numeric_limits<unsigned __int64>::is_signed
 CONST	ENDS
 ;	COMDAT ?num@?$ratio@$0GE@$00@std@@2_JB
 CONST	SEGMENT
@@ -627,6 +625,10 @@ _ConcRT_ProviderGuid DD 0f7b697a3H
 	DB	059H
 	DB	02fH
 CONST	ENDS
+;	COMDAT ?_G2@?$_Ratio_multiply2@U?$ratio@$00$0JIJGIA@@std@@U?$ratio@$0DLJKMKAA@$00@2@@std@@2_JB
+CONST	SEGMENT
+?_G2@?$_Ratio_multiply2@U?$ratio@$00$0JIJGIA@@std@@U?$ratio@$0DLJKMKAA@$00@2@@std@@2_JB DQ 0000000000989680H ; std::_Ratio_multiply2<std::ratio<1,10000000>,std::ratio<1000000000,1> >::_G2
+CONST	ENDS
 ;	COMDAT ?digits10@?$numeric_limits@K@std@@2HB
 CONST	SEGMENT
 ?digits10@?$numeric_limits@K@std@@2HB DD 09H		; std::numeric_limits<unsigned long>::digits10
@@ -635,17 +637,13 @@ CONST	ENDS
 CONST	SEGMENT
 ?digits@?$numeric_limits@K@std@@2HB DD 020H		; std::numeric_limits<unsigned long>::digits
 CONST	ENDS
-;	COMDAT ?_G2@?$_Ratio_multiply2@U?$ratio@$00$0JIJGIA@@std@@U?$ratio@$0DLJKMKAA@$00@2@@std@@2_JB
+;	COMDAT ?value@?$_Gcd@$0DLJKMKAA@$0JIJGIA@@std@@2_JB
 CONST	SEGMENT
-?_G2@?$_Ratio_multiply2@U?$ratio@$00$0JIJGIA@@std@@U?$ratio@$0DLJKMKAA@$00@2@@std@@2_JB DQ 0000000000989680H ; std::_Ratio_multiply2<std::ratio<1,10000000>,std::ratio<1000000000,1> >::_G2
+?value@?$_Gcd@$0DLJKMKAA@$0JIJGIA@@std@@2_JB DQ 0000000000989680H ; std::_Gcd<1000000000,10000000>::value
 CONST	ENDS
 ;	COMDAT ?is_signed@?$numeric_limits@K@std@@2_NB
 CONST	SEGMENT
 ?is_signed@?$numeric_limits@K@std@@2_NB DB 00H		; std::numeric_limits<unsigned long>::is_signed
-CONST	ENDS
-;	COMDAT ?value@?$_Gcd@$0DLJKMKAA@$0JIJGIA@@std@@2_JB
-CONST	SEGMENT
-?value@?$_Gcd@$0DLJKMKAA@$0JIJGIA@@std@@2_JB DQ 0000000000989680H ; std::_Gcd<1000000000,10000000>::value
 CONST	ENDS
 ;	COMDAT ?_G2@?$_Ratio_multiply2@U?$ratio@$00$0DLJKMKAA@@std@@U?$ratio@$0DLJKMKAA@$00@2@@std@@2_JB
 CONST	SEGMENT
@@ -667,6 +665,10 @@ CONST	ENDS
 CONST	SEGMENT
 ?value@?$_GcdX@$0DLJKMKAA@$0DLJKMKAA@@std@@2_JB DQ 000000003b9aca00H ; std::_GcdX<1000000000,1000000000>::value
 CONST	ENDS
+;	COMDAT ?value@?$_GcdX@$0DLJKMKAA@$0A@@std@@2_JB
+CONST	SEGMENT
+?value@?$_GcdX@$0DLJKMKAA@$0A@@std@@2_JB DQ 000000003b9aca00H ; std::_GcdX<1000000000,0>::value
+CONST	ENDS
 ;	COMDAT ?is_steady@steady_clock@chrono@std@@2_NB
 CONST	SEGMENT
 ?is_steady@steady_clock@chrono@std@@2_NB DB 01H		; std::chrono::steady_clock::is_steady
@@ -679,21 +681,17 @@ CONST	ENDS
 CONST	SEGMENT
 ?digits10@?$numeric_limits@J@std@@2HB DD 09H		; std::numeric_limits<long>::digits10
 CONST	ENDS
-;	COMDAT ?value@?$_GcdX@$0DLJKMKAA@$0A@@std@@2_JB
-CONST	SEGMENT
-?value@?$_GcdX@$0DLJKMKAA@$0A@@std@@2_JB DQ 000000003b9aca00H ; std::_GcdX<1000000000,0>::value
-CONST	ENDS
 ;	COMDAT ?digits@?$numeric_limits@J@std@@2HB
 CONST	SEGMENT
 ?digits@?$numeric_limits@J@std@@2HB DD 01fH		; std::numeric_limits<long>::digits
 CONST	ENDS
-;	COMDAT ?is_signed@?$numeric_limits@J@std@@2_NB
-CONST	SEGMENT
-?is_signed@?$numeric_limits@J@std@@2_NB DB 01H		; std::numeric_limits<long>::is_signed
-CONST	ENDS
 ;	COMDAT ?_G1@?$_Ratio_multiply2@U?$ratio@$00$0DLJKMKAA@@std@@U?$ratio@$0DLJKMKAA@$00@2@@std@@2_JB
 CONST	SEGMENT
 ?_G1@?$_Ratio_multiply2@U?$ratio@$00$0DLJKMKAA@@std@@U?$ratio@$0DLJKMKAA@$00@2@@std@@2_JB DQ 0000000000000001H ; std::_Ratio_multiply2<std::ratio<1,1000000000>,std::ratio<1000000000,1> >::_G1
+CONST	ENDS
+;	COMDAT ?is_signed@?$numeric_limits@J@std@@2_NB
+CONST	SEGMENT
+?is_signed@?$numeric_limits@J@std@@2_NB DB 01H		; std::numeric_limits<long>::is_signed
 CONST	ENDS
 ;	COMDAT ?value@?$_Sizeof@U_Nil@std@@U12@U12@U12@U12@U12@U12@U12@@std@@2IB
 CONST	SEGMENT
@@ -703,21 +701,21 @@ CONST	ENDS
 CONST	SEGMENT
 ?digits10@?$numeric_limits@I@std@@2HB DD 09H		; std::numeric_limits<unsigned int>::digits10
 CONST	ENDS
-;	COMDAT ?digits@?$numeric_limits@I@std@@2HB
-CONST	SEGMENT
-?digits@?$numeric_limits@I@std@@2HB DD 020H		; std::numeric_limits<unsigned int>::digits
-CONST	ENDS
-;	COMDAT ?is_signed@?$numeric_limits@I@std@@2_NB
-CONST	SEGMENT
-?is_signed@?$numeric_limits@I@std@@2_NB DB 00H		; std::numeric_limits<unsigned int>::is_signed
-CONST	ENDS
 ;	COMDAT ?den@?$ratio@$00$0DOI@@std@@2_JB
 CONST	SEGMENT
 ?den@?$ratio@$00$0DOI@@std@@2_JB DQ 00000000000003e8H	; std::ratio<1,1000>::den
 CONST	ENDS
+;	COMDAT ?digits@?$numeric_limits@I@std@@2HB
+CONST	SEGMENT
+?digits@?$numeric_limits@I@std@@2HB DD 020H		; std::numeric_limits<unsigned int>::digits
+CONST	ENDS
 ;	COMDAT ?num@?$ratio@$00$0DOI@@std@@2_JB
 CONST	SEGMENT
 ?num@?$ratio@$00$0DOI@@std@@2_JB DQ 0000000000000001H	; std::ratio<1,1000>::num
+CONST	ENDS
+;	COMDAT ?is_signed@?$numeric_limits@I@std@@2_NB
+CONST	SEGMENT
+?is_signed@?$numeric_limits@I@std@@2_NB DB 00H		; std::numeric_limits<unsigned int>::is_signed
 CONST	ENDS
 ;	COMDAT ?value@?$_Gcd@$00$0DOI@@std@@2_JB
 CONST	SEGMENT
@@ -731,29 +729,33 @@ CONST	ENDS
 CONST	SEGMENT
 ?value@?$_GcdX@$0DOI@$00@std@@2_JB DQ 0000000000000001H	; std::_GcdX<1000,1>::value
 CONST	ENDS
-;	COMDAT ?digits10@?$numeric_limits@H@std@@2HB
-CONST	SEGMENT
-?digits10@?$numeric_limits@H@std@@2HB DD 09H		; std::numeric_limits<int>::digits10
-CONST	ENDS
-;	COMDAT ?digits@?$numeric_limits@H@std@@2HB
-CONST	SEGMENT
-?digits@?$numeric_limits@H@std@@2HB DD 01fH		; std::numeric_limits<int>::digits
-CONST	ENDS
 ;	COMDAT ?value@?$_Lcm@$0DOI@$0DOI@@std@@2_JB
 CONST	SEGMENT
 ?value@?$_Lcm@$0DOI@$0DOI@@std@@2_JB DQ 00000000000003e8H ; std::_Lcm<1000,1000>::value
 CONST	ENDS
-;	COMDAT ?is_signed@?$numeric_limits@H@std@@2_NB
+;	COMDAT ?digits10@?$numeric_limits@H@std@@2HB
 CONST	SEGMENT
-?is_signed@?$numeric_limits@H@std@@2_NB DB 01H		; std::numeric_limits<int>::is_signed
+?digits10@?$numeric_limits@H@std@@2HB DD 09H		; std::numeric_limits<int>::digits10
 CONST	ENDS
 ;	COMDAT ?_Gx@?$_Lcm@$0DOI@$0DOI@@std@@2_JB
 CONST	SEGMENT
 ?_Gx@?$_Lcm@$0DOI@$0DOI@@std@@2_JB DQ 00000000000003e8H	; std::_Lcm<1000,1000>::_Gx
 CONST	ENDS
+;	COMDAT ?digits@?$numeric_limits@H@std@@2HB
+CONST	SEGMENT
+?digits@?$numeric_limits@H@std@@2HB DD 01fH		; std::numeric_limits<int>::digits
+CONST	ENDS
 ;	COMDAT ?value@?$_Abs@$0DOI@@std@@2_JB
 CONST	SEGMENT
 ?value@?$_Abs@$0DOI@@std@@2_JB DQ 00000000000003e8H	; std::_Abs<1000>::value
+CONST	ENDS
+;	COMDAT ?is_signed@?$numeric_limits@H@std@@2_NB
+CONST	SEGMENT
+?is_signed@?$numeric_limits@H@std@@2_NB DB 01H		; std::numeric_limits<int>::is_signed
+CONST	ENDS
+;	COMDAT ?value@?$_Is_ratio@U?$ratio@$00$0DOI@@std@@@chrono@std@@2_NB
+CONST	SEGMENT
+?value@?$_Is_ratio@U?$ratio@$00$0DOI@@std@@@chrono@std@@2_NB DB 01H ; std::chrono::_Is_ratio<std::ratio<1,1000> >::value
 CONST	ENDS
 ;	COMDAT ?den@?$ratio@$00$00@std@@2_JB
 CONST	SEGMENT
@@ -762,10 +764,6 @@ CONST	ENDS
 ;	COMDAT ?num@?$ratio@$00$00@std@@2_JB
 CONST	SEGMENT
 ?num@?$ratio@$00$00@std@@2_JB DQ 0000000000000001H	; std::ratio<1,1>::num
-CONST	ENDS
-;	COMDAT ?value@?$_Is_ratio@U?$ratio@$00$0DOI@@std@@@chrono@std@@2_NB
-CONST	SEGMENT
-?value@?$_Is_ratio@U?$ratio@$00$0DOI@@std@@@chrono@std@@2_NB DB 01H ; std::chrono::_Is_ratio<std::ratio<1,1000> >::value
 CONST	ENDS
 ;	COMDAT ?digits10@?$numeric_limits@G@std@@2HB
 CONST	SEGMENT
@@ -839,14 +837,6 @@ CONST	ENDS
 CONST	SEGMENT
 ?is_signed@?$numeric_limits@E@std@@2_NB DB 00H		; std::numeric_limits<unsigned char>::is_signed
 CONST	ENDS
-;	COMDAT ?digits10@?$numeric_limits@C@std@@2HB
-CONST	SEGMENT
-?digits10@?$numeric_limits@C@std@@2HB DD 02H		; std::numeric_limits<signed char>::digits10
-CONST	ENDS
-;	COMDAT ?digits@?$numeric_limits@C@std@@2HB
-CONST	SEGMENT
-?digits@?$numeric_limits@C@std@@2HB DD 07H		; std::numeric_limits<signed char>::digits
-CONST	ENDS
 ;	COMDAT ?den@?$ratio@$00$0JIJGIA@@std@@2_JB
 CONST	SEGMENT
 ?den@?$ratio@$00$0JIJGIA@@std@@2_JB DQ 0000000000989680H ; std::ratio<1,10000000>::den
@@ -854,6 +844,14 @@ CONST	ENDS
 ;	COMDAT ?num@?$ratio@$00$0JIJGIA@@std@@2_JB
 CONST	SEGMENT
 ?num@?$ratio@$00$0JIJGIA@@std@@2_JB DQ 0000000000000001H ; std::ratio<1,10000000>::num
+CONST	ENDS
+;	COMDAT ?digits10@?$numeric_limits@C@std@@2HB
+CONST	SEGMENT
+?digits10@?$numeric_limits@C@std@@2HB DD 02H		; std::numeric_limits<signed char>::digits10
+CONST	ENDS
+;	COMDAT ?digits@?$numeric_limits@C@std@@2HB
+CONST	SEGMENT
+?digits@?$numeric_limits@C@std@@2HB DD 07H		; std::numeric_limits<signed char>::digits
 CONST	ENDS
 ;	COMDAT ?is_signed@?$numeric_limits@C@std@@2_NB
 CONST	SEGMENT
@@ -879,6 +877,10 @@ CONST	ENDS
 CONST	SEGMENT
 ?digits@?$numeric_limits@_N@std@@2HB DD 01H		; std::numeric_limits<bool>::digits
 CONST	ENDS
+;	COMDAT ?value@?$_Is_ratio@U?$ratio@$00$0JIJGIA@@std@@@chrono@std@@2_NB
+CONST	SEGMENT
+?value@?$_Is_ratio@U?$ratio@$00$0JIJGIA@@std@@@chrono@std@@2_NB DB 01H ; std::chrono::_Is_ratio<std::ratio<1,10000000> >::value
+CONST	ENDS
 ;	COMDAT ?is_signed@?$numeric_limits@_N@std@@2_NB
 CONST	SEGMENT
 ?is_signed@?$numeric_limits@_N@std@@2_NB DB 00H		; std::numeric_limits<bool>::is_signed
@@ -886,10 +888,6 @@ CONST	ENDS
 ;	COMDAT ?is_modulo@?$numeric_limits@_N@std@@2_NB
 CONST	SEGMENT
 ?is_modulo@?$numeric_limits@_N@std@@2_NB DB 00H		; std::numeric_limits<bool>::is_modulo
-CONST	ENDS
-;	COMDAT ?value@?$_Is_ratio@U?$ratio@$00$0JIJGIA@@std@@@chrono@std@@2_NB
-CONST	SEGMENT
-?value@?$_Is_ratio@U?$ratio@$00$0JIJGIA@@std@@@chrono@std@@2_NB DB 01H ; std::chrono::_Is_ratio<std::ratio<1,10000000> >::value
 CONST	ENDS
 ;	COMDAT ?_Stream_err@failure@ios_base@std@@0W4io_errc@43@B
 CONST	SEGMENT
@@ -967,6 +965,10 @@ CONST	ENDS
 CONST	SEGMENT
 ?_S_cancelBitsMask@_TaskCollectionBase@details@Concurrency@@1IB DD 03H ; Concurrency::details::_TaskCollectionBase::_S_cancelBitsMask
 CONST	ENDS
+;	COMDAT ?value@?$_Is_ratio@U?$ratio@$00$00@std@@@chrono@std@@2_NB
+CONST	SEGMENT
+?value@?$_Is_ratio@U?$ratio@$00$00@std@@@chrono@std@@2_NB DB 01H ; std::chrono::_Is_ratio<std::ratio<1,1> >::value
+CONST	ENDS
 ;	COMDAT ?_Noreplace@?$_Iosb@H@std@@2W4_Openmode@12@B
 CONST	SEGMENT
 ?_Noreplace@?$_Iosb@H@std@@2W4_Openmode@12@B DD 080H	; std::_Iosb<int>::_Noreplace
@@ -978,10 +980,6 @@ CONST	ENDS
 ;	COMDAT ?trunc@?$_Iosb@H@std@@2W4_Openmode@12@B
 CONST	SEGMENT
 ?trunc@?$_Iosb@H@std@@2W4_Openmode@12@B DD 010H		; std::_Iosb<int>::trunc
-CONST	ENDS
-;	COMDAT ?value@?$_Is_ratio@U?$ratio@$00$00@std@@@chrono@std@@2_NB
-CONST	SEGMENT
-?value@?$_Is_ratio@U?$ratio@$00$00@std@@@chrono@std@@2_NB DB 01H ; std::chrono::_Is_ratio<std::ratio<1,1> >::value
 CONST	ENDS
 ;	COMDAT ?app@?$_Iosb@H@std@@2W4_Openmode@12@B
 CONST	SEGMENT
@@ -1135,9 +1133,17 @@ CONST	ENDS
 CONST	SEGMENT
 ?has_infinity@_Num_float_base@std@@2_NB DB 01H		; std::_Num_float_base::has_infinity
 CONST	ENDS
+;	COMDAT ?_G2@?$_Ratio_multiply2@U?$ratio@$00$00@std@@U12@@std@@2_JB
+CONST	SEGMENT
+?_G2@?$_Ratio_multiply2@U?$ratio@$00$00@std@@U12@@std@@2_JB DQ 0000000000000001H ; std::_Ratio_multiply2<std::ratio<1,1>,std::ratio<1,1> >::_G2
+CONST	ENDS
 ;	COMDAT ?right@?$_Iosb@H@std@@2W4_Fmtflags@12@B
 CONST	SEGMENT
 ?right@?$_Iosb@H@std@@2W4_Fmtflags@12@B DD 080H		; std::_Iosb<int>::right
+CONST	ENDS
+;	COMDAT ?_G1@?$_Ratio_multiply2@U?$ratio@$00$00@std@@U12@@std@@2_JB
+CONST	SEGMENT
+?_G1@?$_Ratio_multiply2@U?$ratio@$00$00@std@@U12@@std@@2_JB DQ 0000000000000001H ; std::_Ratio_multiply2<std::ratio<1,1>,std::ratio<1,1> >::_G1
 CONST	ENDS
 ;	COMDAT ?has_denorm_loss@_Num_float_base@std@@2_NB
 CONST	SEGMENT
@@ -1155,14 +1161,6 @@ CONST	ENDS
 CONST	SEGMENT
 ?showpos@?$_Iosb@H@std@@2W4_Fmtflags@12@B DD 020H	; std::_Iosb<int>::showpos
 CONST	ENDS
-;	COMDAT ?_G2@?$_Ratio_multiply2@U?$ratio@$00$00@std@@U12@@std@@2_JB
-CONST	SEGMENT
-?_G2@?$_Ratio_multiply2@U?$ratio@$00$00@std@@U12@@std@@2_JB DQ 0000000000000001H ; std::_Ratio_multiply2<std::ratio<1,1>,std::ratio<1,1> >::_G2
-CONST	ENDS
-;	COMDAT ?_G1@?$_Ratio_multiply2@U?$ratio@$00$00@std@@U12@@std@@2_JB
-CONST	SEGMENT
-?_G1@?$_Ratio_multiply2@U?$ratio@$00$00@std@@U12@@std@@2_JB DQ 0000000000000001H ; std::_Ratio_multiply2<std::ratio<1,1>,std::ratio<1,1> >::_G1
-CONST	ENDS
 ;	COMDAT ?showpoint@?$_Iosb@H@std@@2W4_Fmtflags@12@B
 CONST	SEGMENT
 ?showpoint@?$_Iosb@H@std@@2W4_Fmtflags@12@B DD 010H	; std::_Iosb<int>::showpoint
@@ -1179,6 +1177,10 @@ CONST	ENDS
 CONST	SEGMENT
 ?radix@_Num_int_base@std@@2HB DD 02H			; std::_Num_int_base::radix
 CONST	ENDS
+;	COMDAT ?den@?$ratio@$0DLJKMKAA@$00@std@@2_JB
+CONST	SEGMENT
+?den@?$ratio@$0DLJKMKAA@$00@std@@2_JB DQ 0000000000000001H ; std::ratio<1000000000,1>::den
+CONST	ENDS
 ;	COMDAT ?is_specialized@_Num_int_base@std@@2_NB
 CONST	SEGMENT
 ?is_specialized@_Num_int_base@std@@2_NB DB 01H		; std::_Num_int_base::is_specialized
@@ -1186,6 +1188,10 @@ CONST	ENDS
 ;	COMDAT ?unitbuf@?$_Iosb@H@std@@2W4_Fmtflags@12@B
 CONST	SEGMENT
 ?unitbuf@?$_Iosb@H@std@@2W4_Fmtflags@12@B DD 02H	; std::_Iosb<int>::unitbuf
+CONST	ENDS
+;	COMDAT ?num@?$ratio@$0DLJKMKAA@$00@std@@2_JB
+CONST	SEGMENT
+?num@?$ratio@$0DLJKMKAA@$00@std@@2_JB DQ 000000003b9aca00H ; std::ratio<1000000000,1>::num
 CONST	ENDS
 ;	COMDAT ?skipws@?$_Iosb@H@std@@2W4_Fmtflags@12@B
 CONST	SEGMENT
@@ -1199,14 +1205,6 @@ CONST	ENDS
 CONST	SEGMENT
 ?is_integer@_Num_int_base@std@@2_NB DB 01H		; std::_Num_int_base::is_integer
 CONST	ENDS
-;	COMDAT ?den@?$ratio@$0DLJKMKAA@$00@std@@2_JB
-CONST	SEGMENT
-?den@?$ratio@$0DLJKMKAA@$00@std@@2_JB DQ 0000000000000001H ; std::ratio<1000000000,1>::den
-CONST	ENDS
-;	COMDAT ?num@?$ratio@$0DLJKMKAA@$00@std@@2_JB
-CONST	SEGMENT
-?num@?$ratio@$0DLJKMKAA@$00@std@@2_JB DQ 000000003b9aca00H ; std::ratio<1000000000,1>::num
-CONST	ENDS
 ;	COMDAT ?is_exact@_Num_int_base@std@@2_NB
 CONST	SEGMENT
 ?is_exact@_Num_int_base@std@@2_NB DB 01H		; std::_Num_int_base::is_exact
@@ -1214,6 +1212,10 @@ CONST	ENDS
 ;	COMDAT ?is_bounded@_Num_int_base@std@@2_NB
 CONST	SEGMENT
 ?is_bounded@_Num_int_base@std@@2_NB DB 01H		; std::_Num_int_base::is_bounded
+CONST	ENDS
+;	COMDAT ?_G2@?$_Ratio_multiply2@U?$ratio@$00$00@std@@U?$ratio@$0DLJKMKAA@$00@2@@std@@2_JB
+CONST	SEGMENT
+?_G2@?$_Ratio_multiply2@U?$ratio@$00$00@std@@U?$ratio@$0DLJKMKAA@$00@2@@std@@2_JB DQ 0000000000000001H ; std::_Ratio_multiply2<std::ratio<1,1>,std::ratio<1000000000,1> >::_G2
 CONST	ENDS
 ;	COMDAT ?radix@_Num_base@std@@2HB
 CONST	SEGMENT
@@ -1231,13 +1233,13 @@ CONST	ENDS
 CONST	SEGMENT
 ?min_exponent@_Num_base@std@@2HB DD 00H			; std::_Num_base::min_exponent
 CONST	ENDS
+;	COMDAT ?value@?$_Gcd@$0DLJKMKAA@$00@std@@2_JB
+CONST	SEGMENT
+?value@?$_Gcd@$0DLJKMKAA@$00@std@@2_JB DQ 0000000000000001H ; std::_Gcd<1000000000,1>::value
+CONST	ENDS
 ;	COMDAT ?all@?$_Locbase@H@std@@2HB
 CONST	SEGMENT
 ?all@?$_Locbase@H@std@@2HB DD 03fH			; std::_Locbase<int>::all
-CONST	ENDS
-;	COMDAT ?_G2@?$_Ratio_multiply2@U?$ratio@$00$00@std@@U?$ratio@$0DLJKMKAA@$00@2@@std@@2_JB
-CONST	SEGMENT
-?_G2@?$_Ratio_multiply2@U?$ratio@$00$00@std@@U?$ratio@$0DLJKMKAA@$00@2@@std@@2_JB DQ 0000000000000001H ; std::_Ratio_multiply2<std::ratio<1,1>,std::ratio<1000000000,1> >::_G2
 CONST	ENDS
 ;	COMDAT ?max_exponent10@_Num_base@std@@2HB
 CONST	SEGMENT
@@ -1259,13 +1261,13 @@ CONST	ENDS
 CONST	SEGMENT
 ?numeric@?$_Locbase@H@std@@2HB DD 08H			; std::_Locbase<int>::numeric
 CONST	ENDS
+;	COMDAT ?value@?$_GcdX@$0DLJKMKAA@$00@std@@2_JB
+CONST	SEGMENT
+?value@?$_GcdX@$0DLJKMKAA@$00@std@@2_JB DQ 0000000000000001H ; std::_GcdX<1000000000,1>::value
+CONST	ENDS
 ;	COMDAT ?max_digits10@_Num_base@std@@2HB
 CONST	SEGMENT
 ?max_digits10@_Num_base@std@@2HB DD 00H			; std::_Num_base::max_digits10
-CONST	ENDS
-;	COMDAT ?value@?$_Gcd@$0DLJKMKAA@$00@std@@2_JB
-CONST	SEGMENT
-?value@?$_Gcd@$0DLJKMKAA@$00@std@@2_JB DQ 0000000000000001H ; std::_Gcd<1000000000,1>::value
 CONST	ENDS
 ;	COMDAT ?monetary@?$_Locbase@H@std@@2HB
 CONST	SEGMENT
@@ -1287,9 +1289,9 @@ CONST	ENDS
 CONST	SEGMENT
 ?digits@_Num_base@std@@2HB DD 00H			; std::_Num_base::digits
 CONST	ENDS
-;	COMDAT ?value@?$_GcdX@$0DLJKMKAA@$00@std@@2_JB
+;	COMDAT ?_G1@?$_Ratio_multiply2@U?$ratio@$00$00@std@@U?$ratio@$0DLJKMKAA@$00@2@@std@@2_JB
 CONST	SEGMENT
-?value@?$_GcdX@$0DLJKMKAA@$00@std@@2_JB DQ 0000000000000001H ; std::_GcdX<1000000000,1>::value
+?_G1@?$_Ratio_multiply2@U?$ratio@$00$00@std@@U?$ratio@$0DLJKMKAA@$00@2@@std@@2_JB DQ 0000000000000001H ; std::_Ratio_multiply2<std::ratio<1,1>,std::ratio<1000000000,1> >::_G1
 CONST	ENDS
 ;	COMDAT ?round_style@_Num_base@std@@2W4float_round_style@2@B
 CONST	SEGMENT
@@ -1299,21 +1301,17 @@ CONST	ENDS
 CONST	SEGMENT
 ?traps@_Num_base@std@@2_NB DB 00H			; std::_Num_base::traps
 CONST	ENDS
+;	COMDAT ?value@?$_Always_false@_J@std@@2_NB
+CONST	SEGMENT
+?value@?$_Always_false@_J@std@@2_NB DB 00H		; std::_Always_false<__int64>::value
+CONST	ENDS
 ;	COMDAT ?tinyness_before@_Num_base@std@@2_NB
 CONST	SEGMENT
 ?tinyness_before@_Num_base@std@@2_NB DB 00H		; std::_Num_base::tinyness_before
 CONST	ENDS
-;	COMDAT ?_G1@?$_Ratio_multiply2@U?$ratio@$00$00@std@@U?$ratio@$0DLJKMKAA@$00@2@@std@@2_JB
-CONST	SEGMENT
-?_G1@?$_Ratio_multiply2@U?$ratio@$00$00@std@@U?$ratio@$0DLJKMKAA@$00@2@@std@@2_JB DQ 0000000000000001H ; std::_Ratio_multiply2<std::ratio<1,1>,std::ratio<1000000000,1> >::_G1
-CONST	ENDS
 ;	COMDAT ?is_specialized@_Num_base@std@@2_NB
 CONST	SEGMENT
 ?is_specialized@_Num_base@std@@2_NB DB 00H		; std::_Num_base::is_specialized
-CONST	ENDS
-;	COMDAT ?value@?$_Always_false@_J@std@@2_NB
-CONST	SEGMENT
-?value@?$_Always_false@_J@std@@2_NB DB 00H		; std::_Always_false<__int64>::value
 CONST	ENDS
 ;	COMDAT ?is_signed@_Num_base@std@@2_NB
 CONST	SEGMENT
@@ -1443,21 +1441,21 @@ CONST	ENDS
 CONST	SEGMENT
 ?num@?$ratio@$00$0DLJKMKAA@@std@@2_JB DQ 0000000000000001H ; std::ratio<1,1000000000>::num
 CONST	ENDS
-;	COMDAT ?value@?$_Abs@$0DLJKMKAA@@std@@2_JB
-CONST	SEGMENT
-?value@?$_Abs@$0DLJKMKAA@@std@@2_JB DQ 000000003b9aca00H ; std::_Abs<1000000000>::value
-CONST	ENDS
 ;	COMDAT ?value@?$_Gcd@$00$0DLJKMKAA@@std@@2_JB
 CONST	SEGMENT
 ?value@?$_Gcd@$00$0DLJKMKAA@@std@@2_JB DQ 0000000000000001H ; std::_Gcd<1,1000000000>::value
 CONST	ENDS
-;	COMDAT ?value@?$_Abs@$0GE@@std@@2_JB
+;	COMDAT ?value@?$_Abs@$0DLJKMKAA@@std@@2_JB
 CONST	SEGMENT
-?value@?$_Abs@$0GE@@std@@2_JB DQ 0000000000000064H	; std::_Abs<100>::value
+?value@?$_Abs@$0DLJKMKAA@@std@@2_JB DQ 000000003b9aca00H ; std::_Abs<1000000000>::value
 CONST	ENDS
 ;	COMDAT ?value@?$_GcdX@$00$0DLJKMKAA@@std@@2_JB
 CONST	SEGMENT
 ?value@?$_GcdX@$00$0DLJKMKAA@@std@@2_JB DQ 0000000000000001H ; std::_GcdX<1,1000000000>::value
+CONST	ENDS
+;	COMDAT ?value@?$_Abs@$0GE@@std@@2_JB
+CONST	SEGMENT
+?value@?$_Abs@$0GE@@std@@2_JB DQ 0000000000000064H	; std::_Abs<100>::value
 CONST	ENDS
 ;	COMDAT ?value@?$_Is_ratio@U?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@2_NB
 CONST	SEGMENT
@@ -1479,6 +1477,14 @@ CONST	ENDS
 CONST	SEGMENT
 ?min_exponent10@?$numeric_limits@O@std@@2HB DD 0fffffecdH ; std::numeric_limits<long double>::min_exponent10
 CONST	ENDS
+;	COMDAT ?den@?$ratio@$0PECEA@$00@std@@2_JB
+CONST	SEGMENT
+?den@?$ratio@$0PECEA@$00@std@@2_JB DQ 0000000000000001H	; std::ratio<1000000,1>::den
+CONST	ENDS
+;	COMDAT ?num@?$ratio@$0PECEA@$00@std@@2_JB
+CONST	SEGMENT
+?num@?$ratio@$0PECEA@$00@std@@2_JB DQ 00000000000f4240H	; std::ratio<1000000,1>::num
+CONST	ENDS
 ;	COMDAT ?min_exponent@?$numeric_limits@O@std@@2HB
 CONST	SEGMENT
 ?min_exponent@?$numeric_limits@O@std@@2HB DD 0fffffc03H	; std::numeric_limits<long double>::min_exponent
@@ -1487,13 +1493,9 @@ CONST	ENDS
 CONST	SEGMENT
 ?max_exponent10@?$numeric_limits@O@std@@2HB DD 0134H	; std::numeric_limits<long double>::max_exponent10
 CONST	ENDS
-;	COMDAT ?den@?$ratio@$0PECEA@$00@std@@2_JB
+;	COMDAT ?value@?$_Gcd@$0PECEA@$00@std@@2_JB
 CONST	SEGMENT
-?den@?$ratio@$0PECEA@$00@std@@2_JB DQ 0000000000000001H	; std::ratio<1000000,1>::den
-CONST	ENDS
-;	COMDAT ?num@?$ratio@$0PECEA@$00@std@@2_JB
-CONST	SEGMENT
-?num@?$ratio@$0PECEA@$00@std@@2_JB DQ 00000000000f4240H	; std::ratio<1000000,1>::num
+?value@?$_Gcd@$0PECEA@$00@std@@2_JB DQ 0000000000000001H ; std::_Gcd<1000000,1>::value
 CONST	ENDS
 ;	COMDAT ?max_exponent@?$numeric_limits@O@std@@2HB
 CONST	SEGMENT
@@ -1874,6 +1876,7 @@ PUBLIC	??_GEnemySoldier@@UAEPAXI@Z			; EnemySoldier::`scalar deleting destructor
 PUBLIC	??0Screen@@QAE@DPAVPlayer@@@Z			; Screen::Screen
 PUBLIC	?stuffAt@Screen@@QAE_NHH@Z			; Screen::stuffAt
 PUBLIC	?render@Screen@@QAEXXZ				; Screen::render
+PUBLIC	?setColor@Screen@@QAEXE@Z			; Screen::setColor
 PUBLIC	??$?6DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@@Z ; std::operator<<<char,std::char_traits<char>,std::allocator<char> >
 PUBLIC	?getInput@@YAXPAVPlayer@@@Z			; getInput
 PUBLIC	?processaiwhole@@YAPAXPAX@Z			; processaiwhole
@@ -2060,7 +2063,7 @@ PUBLIC	?enemies@Enemy@@1V?$vector@PAVEnemy@@V?$allocator@PAVEnemy@@@std@@@std@@A
 PUBLIC	??_7Enemy@@6B@					; Enemy::`vftable'
 PUBLIC	??_7EnemySoldier@@6B@				; EnemySoldier::`vftable'
 PUBLIC	??_C@_08OBFFCDMO@Color?5?$EA?$EA?$AA@		; `string'
-PUBLIC	??_C@_08ODPOOMBI@Color?50F?$AA@			; `string'
+PUBLIC	??_C@_08NFNKKEKP@Color?507?$AA@			; `string'
 PUBLIC	??_C@_09LCCGMOOO@?5Health?3?5?$AA@		; `string'
 PUBLIC	??_C@_0L@BBALFDB@?3?5?5Ammo?3?5?5?$AA@		; `string'
 PUBLIC	??_C@_01EEMJAFIK@?6?$AA@			; `string'
@@ -2244,8 +2247,6 @@ EXTRN	__imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A:BYTE
 EXTRN	___security_cookie:DWORD
 EXTRN	__fltused:DWORD
 _BSS	SEGMENT
-	ALIGN	4
-
 _piecewise_construct DB 01H DUP (?)
 	ALIGN	4
 
@@ -3212,9 +3213,9 @@ CONST	ENDS
 CONST	SEGMENT
 ??_C@_09LCCGMOOO@?5Health?3?5?$AA@ DB ' Health: ', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_08ODPOOMBI@Color?50F?$AA@
+;	COMDAT ??_C@_08NFNKKEKP@Color?507?$AA@
 CONST	SEGMENT
-??_C@_08ODPOOMBI@Color?50F?$AA@ DB 'Color 0F', 00H	; `string'
+??_C@_08NFNKKEKP@Color?507?$AA@ DB 'Color 07', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_08OBFFCDMO@Color?5?$EA?$EA?$AA@
 CONST	SEGMENT
@@ -13562,36 +13563,35 @@ _TEXT	ENDS
 ; File c:\users\jack\documents\visual studio 2012\projects\battelz\main\source.cpp
 ;	COMDAT _main
 _TEXT	SEGMENT
-tv92 = -536						; size = 4
-tv208 = -532						; size = 4
-tv70 = -532						; size = 4
-tv251 = -528						; size = 4
-tv241 = -528						; size = 4
-tv185 = -528						; size = 4
-tv176 = -528						; size = 4
-tv163 = -528						; size = 4
-tv150 = -528						; size = 4
-tv137 = -528						; size = 4
-$T2 = -520						; size = 4
-$T3 = -508						; size = 4
-$T4 = -496						; size = 4
-$T5 = -484						; size = 4
-$T6 = -472						; size = 4
-$T7 = -460						; size = 4
-$T8 = -448						; size = 4
-$T9 = -436						; size = 4
-$T10 = -424						; size = 4
-$T11 = -412						; size = 4
-$T12 = -400						; size = 4
-$T13 = -388						; size = 4
-$T14 = -376						; size = 4
-$T15 = -361						; size = 1
-$T16 = -352						; size = 16
-$T17 = -328						; size = 8
-$T18 = -312						; size = 4
-$T19 = -300						; size = 4
-_aiThread$ = -96					; size = 8
-_gameView$ = -80					; size = 4
+tv92 = -524						; size = 4
+tv208 = -520						; size = 4
+tv70 = -520						; size = 4
+tv251 = -516						; size = 4
+tv241 = -516						; size = 4
+tv185 = -516						; size = 4
+tv176 = -516						; size = 4
+tv163 = -516						; size = 4
+tv150 = -516						; size = 4
+tv137 = -516						; size = 4
+$T2 = -508						; size = 4
+$T3 = -496						; size = 4
+$T4 = -484						; size = 4
+$T5 = -472						; size = 4
+$T6 = -460						; size = 4
+$T7 = -448						; size = 4
+$T8 = -436						; size = 4
+$T9 = -424						; size = 4
+$T10 = -412						; size = 4
+$T11 = -400						; size = 4
+$T12 = -388						; size = 4
+$T13 = -376						; size = 4
+$T14 = -364						; size = 4
+$T15 = -349						; size = 1
+$T16 = -340						; size = 16
+$T17 = -316						; size = 8
+$T18 = -300						; size = 4
+$T19 = -288						; size = 4
+_aiThread$ = -84					; size = 8
 _soldier4$ = -68					; size = 4
 _soldier3$ = -56					; size = 4
 _soldier2$ = -44					; size = 4
@@ -13600,7 +13600,7 @@ _player$ = -20						; size = 4
 __$EHRec$ = -12						; size = 12
 _main	PROC						; COMDAT
 
-; 496  : int main(){
+; 510  : int main(){
 
 	push	ebp
 	mov	ebp, esp
@@ -13608,12 +13608,12 @@ _main	PROC						; COMDAT
 	push	__ehhandler$_main
 	mov	eax, DWORD PTR fs:0
 	push	eax
-	sub	esp, 524				; 0000020cH
+	sub	esp, 512				; 00000200H
 	push	ebx
 	push	esi
 	push	edi
-	lea	edi, DWORD PTR [ebp-536]
-	mov	ecx, 131				; 00000083H
+	lea	edi, DWORD PTR [ebp-524]
+	mov	ecx, 128				; 00000080H
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 	mov	eax, DWORD PTR ___security_cookie
@@ -13623,13 +13623,13 @@ _main	PROC						; COMDAT
 	mov	DWORD PTR fs:0, eax
 	mov	DWORD PTR $T19[ebp], 0
 
-; 497  : 	
-; 498  : 	mainMenu();
+; 511  : 	
+; 512  : 	mainMenu();
 
 	call	?mainMenu@@YAXXZ			; mainMenu
 
-; 499  : 
-; 500  : 	Player *player = new Player(5, 5, 100.0, 10, 0, 1);
+; 513  : 
+; 514  : 	Player *player = new Player(5, 5, 100.0, 10, 0, 1);
 
 	push	64					; 00000040H
 	call	??2@YAPAXI@Z				; operator new
@@ -13668,7 +13668,7 @@ $LN8@main:
 	mov	edx, DWORD PTR $T2[ebp]
 	mov	DWORD PTR _player$[ebp], edx
 
-; 501  : 	EnemySoldier *soldier = new EnemySoldier(8, 17, 10);
+; 515  : 	EnemySoldier *soldier = new EnemySoldier(8, 17, 10);
 
 	push	32					; 00000020H
 	call	??2@YAPAXI@Z				; operator new
@@ -13698,7 +13698,7 @@ $LN10@main:
 	mov	ecx, DWORD PTR $T5[ebp]
 	mov	DWORD PTR _soldier$[ebp], ecx
 
-; 502  : 	EnemySoldier *soldier2 = new EnemySoldier(10, 5, 10);
+; 516  : 	EnemySoldier *soldier2 = new EnemySoldier(10, 5, 10);
 
 	push	32					; 00000020H
 	call	??2@YAPAXI@Z				; operator new
@@ -13728,7 +13728,7 @@ $LN12@main:
 	mov	ecx, DWORD PTR $T7[ebp]
 	mov	DWORD PTR _soldier2$[ebp], ecx
 
-; 503  : 	EnemySoldier *soldier3 = new EnemySoldier(20, 8, 10);
+; 517  : 	EnemySoldier *soldier3 = new EnemySoldier(20, 8, 10);
 
 	push	32					; 00000020H
 	call	??2@YAPAXI@Z				; operator new
@@ -13758,7 +13758,7 @@ $LN14@main:
 	mov	ecx, DWORD PTR $T9[ebp]
 	mov	DWORD PTR _soldier3$[ebp], ecx
 
-; 504  : 	EnemySoldier *soldier4 = new EnemySoldier(2, 2, 10);
+; 518  : 	EnemySoldier *soldier4 = new EnemySoldier(2, 2, 10);
 
 	push	32					; 00000020H
 	call	??2@YAPAXI@Z				; operator new
@@ -13788,9 +13788,9 @@ $LN16@main:
 	mov	ecx, DWORD PTR $T11[ebp]
 	mov	DWORD PTR _soldier4$[ebp], ecx
 
-; 505  : 	Screen *gameView = new Screen('-', player);
+; 519  : 	gameView = new Screen('-', player);
 
-	push	908					; 0000038cH
+	push	912					; 00000390H
 	call	??2@YAPAXI@Z				; operator new
 	add	esp, 4
 	mov	DWORD PTR $T14[ebp], eax
@@ -13811,14 +13811,14 @@ $LN18@main:
 	mov	DWORD PTR $T13[ebp], ecx
 	mov	DWORD PTR __$EHRec$[ebp+8], -1
 	mov	edx, DWORD PTR $T13[ebp]
-	mov	DWORD PTR _gameView$[ebp], edx
+	mov	DWORD PTR ?gameView@@3PAVScreen@@A, edx	; gameView
 
-; 506  : 
-; 507  : 	pthread_t aiThread;
-; 508  : 	/*cout << typeid(player).name() << endl;
-; 509  : 	system("pause");*/
-; 510  : 	//pthread_create(&aiThread, NULL, processaiwhole, player);
-; 511  : 	pthread_create(&aiThread, NULL, processaibysingle, player);
+; 520  : 
+; 521  : 	pthread_t aiThread;
+; 522  : 	/*cout << typeid(player).name() << endl;
+; 523  : 	system("pause");*/
+; 524  : 	//pthread_create(&aiThread, NULL, processaiwhole, player);
+; 525  : 	pthread_create(&aiThread, NULL, processaibysingle, player);
 
 	mov	esi, esp
 	mov	eax, DWORD PTR _player$[ebp]
@@ -13832,7 +13832,7 @@ $LN18@main:
 	cmp	esi, esp
 	call	__RTC_CheckEsp
 
-; 512  : 	srand(time(NULL));
+; 526  : 	srand(time(NULL));
 
 	push	0
 	call	_time
@@ -13845,7 +13845,7 @@ $LN18@main:
 	call	__RTC_CheckEsp
 $LN4@main:
 
-; 513  : 	while (player->isAlive() && Enemy::getEnemies().size()>0){
+; 527  : 	while (player->isAlive() && Enemy::getEnemies().size()>0){
 
 	mov	ecx, DWORD PTR _player$[ebp]
 	call	?isAlive@LivingEntity@@QAE_NXZ		; LivingEntity::isAlive
@@ -13882,7 +13882,7 @@ $LN30@main:
 	test	edx, edx
 	je	SHORT $LN3@main
 
-; 514  : 		pthread_mutex_lock(&ai_player_mutex);
+; 528  : 		pthread_mutex_lock(&ai_player_mutex);
 
 	mov	esi, esp
 	push	OFFSET ?ai_player_mutex@@3PAUpthread_mutex_t_@@A ; ai_player_mutex
@@ -13891,26 +13891,26 @@ $LN30@main:
 	cmp	esi, esp
 	call	__RTC_CheckEsp
 
-; 515  : 		levelOne(gameView);
+; 529  : 		levelOne(gameView);
 
-	mov	eax, DWORD PTR _gameView$[ebp]
+	mov	eax, DWORD PTR ?gameView@@3PAVScreen@@A	; gameView
 	push	eax
 	call	?levelOne@@YAXPAVScreen@@@Z		; levelOne
 	add	esp, 4
 
-; 516  : 		getInput(player);
+; 530  : 		getInput(player);
 
 	mov	eax, DWORD PTR _player$[ebp]
 	push	eax
 	call	?getInput@@YAXPAVPlayer@@@Z		; getInput
 	add	esp, 4
 
-; 517  : 		gameView->render();
+; 531  : 		gameView->render();
 
-	mov	ecx, DWORD PTR _gameView$[ebp]
+	mov	ecx, DWORD PTR ?gameView@@3PAVScreen@@A	; gameView
 	call	?render@Screen@@QAEXXZ			; Screen::render
 
-; 518  : 		pthread_mutex_unlock(&ai_player_mutex);
+; 532  : 		pthread_mutex_unlock(&ai_player_mutex);
 
 	mov	esi, esp
 	push	OFFSET ?ai_player_mutex@@3PAUpthread_mutex_t_@@A ; ai_player_mutex
@@ -13919,7 +13919,7 @@ $LN30@main:
 	cmp	esi, esp
 	call	__RTC_CheckEsp
 
-; 519  : 		this_thread::sleep_for(chrono::milliseconds(1)); // just enough time to allow for processai
+; 533  : 		this_thread::sleep_for(chrono::milliseconds(1)); // just enough time to allow for processai
 
 	mov	DWORD PTR $T18[ebp], 1
 	push	0
@@ -13931,12 +13931,12 @@ $LN30@main:
 	call	??$sleep_for@_JU?$ratio@$00$0DOI@@std@@@this_thread@std@@YAXABV?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@1@@Z ; std::this_thread::sleep_for<__int64,std::ratio<1,1000> >
 	add	esp, 4
 
-; 520  : 	}
+; 534  : 	}
 
 	jmp	$LN4@main
 $LN3@main:
 
-; 521  : 	system("cls");
+; 535  : 	system("cls");
 
 	mov	esi, esp
 	push	OFFSET ??_C@_03LCPHGAHP@cls?$AA@
@@ -13945,7 +13945,7 @@ $LN3@main:
 	cmp	esi, esp
 	call	__RTC_CheckEsp
 
-; 522  : 	if(player->isAlive()){
+; 536  : 	if(player->isAlive()){
 
 	mov	ecx, DWORD PTR _player$[ebp]
 	call	?isAlive@LivingEntity@@QAE_NXZ		; LivingEntity::isAlive
@@ -13953,7 +13953,7 @@ $LN3@main:
 	test	eax, eax
 	je	SHORT $LN2@main
 
-; 523  : 		cout << "you win!";
+; 537  : 		cout << "you win!";
 
 	push	OFFSET ??_C@_08DGMLKBON@you?5win?$CB?$AA@
 	mov	eax, DWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
@@ -13961,13 +13961,13 @@ $LN3@main:
 	call	??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z ; std::operator<<<std::char_traits<char> >
 	add	esp, 8
 
-; 524  : 	}
-; 525  : 	else{
+; 538  : 	}
+; 539  : 	else{
 
 	jmp	SHORT $LN1@main
 $LN2@main:
 
-; 526  : 		cout << "you lose!";
+; 540  : 		cout << "you lose!";
 
 	push	OFFSET ??_C@_09GBKDONCB@you?5lose?$CB?$AA@
 	mov	eax, DWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
@@ -13976,8 +13976,8 @@ $LN2@main:
 	add	esp, 8
 $LN1@main:
 
-; 527  : 	}
-; 528  : 	cout << endl;
+; 541  : 	}
+; 542  : 	cout << endl;
 
 	mov	esi, esp
 	mov	eax, DWORD PTR __imp_?endl@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@1@AAV21@@Z
@@ -13987,7 +13987,7 @@ $LN1@main:
 	cmp	esi, esp
 	call	__RTC_CheckEsp
 
-; 529  : 	system("pause");
+; 543  : 	system("pause");
 
 	mov	esi, esp
 	push	OFFSET ??_C@_05PDJBBECF@pause?$AA@
@@ -13996,12 +13996,12 @@ $LN1@main:
 	cmp	esi, esp
 	call	__RTC_CheckEsp
 
-; 530  : 	//pthread_join(aiThread, NULL); don't do, AI never stops
-; 531  : 	return 0;
+; 544  : 	//pthread_join(aiThread, NULL); don't do, AI never stops
+; 545  : 	return 0;
 
 	xor	eax, eax
 
-; 532  : }
+; 546  : }
 
 	push	edx
 	mov	ecx, ebp
@@ -14016,7 +14016,7 @@ $LN1@main:
 	pop	edi
 	pop	esi
 	pop	ebx
-	add	esp, 536				; 00000218H
+	add	esp, 524				; 0000020cH
 	cmp	ebp, esp
 	call	__RTC_CheckEsp
 	mov	esp, ebp
@@ -14027,7 +14027,7 @@ $LN34@main:
 	DD	1
 	DD	$LN33@main
 $LN33@main:
-	DD	-96					; ffffffa0H
+	DD	-84					; ffffffacH
 	DD	8
 	DD	$LN31@main
 $LN31@main:
@@ -14082,7 +14082,7 @@ __unwindfunclet$_main$6:
 __ehhandler$_main:
 	mov	edx, DWORD PTR [esp+8]
 	lea	eax, DWORD PTR [edx+12]
-	mov	ecx, DWORD PTR [edx-540]
+	mov	ecx, DWORD PTR [edx-528]
 	xor	ecx, eax
 	call	@__security_check_cookie@4
 	mov	eax, OFFSET __ehfuncinfo$_main
@@ -14095,7 +14095,7 @@ _main	ENDP
 _TEXT	SEGMENT
 ?mainMenu@@YAXXZ PROC					; mainMenu, COMDAT
 
-; 490  : void mainMenu(){
+; 504  : void mainMenu(){
 
 	push	ebp
 	mov	ebp, esp
@@ -14108,7 +14108,7 @@ _TEXT	SEGMENT
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 
-; 491  : 	cout << "A little (glitchy) game that I made just for you. Hope you like it!" << endl << "Now, do you want (0) no colors and no lag or (1) colors and lag?" << endl << "Anything else, and it'll just be random" << endl;
+; 505  : 	cout << "A little (glitchy) game that I made just for you. Hope you like it!" << endl << "Now, do you want (0) no colors and no lag or (1) colors and lag?" << endl << "Anything else, and it'll just be random" << endl;
 
 	mov	esi, esp
 	mov	eax, DWORD PTR __imp_?endl@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@1@AAV21@@Z
@@ -14145,7 +14145,7 @@ _TEXT	SEGMENT
 	cmp	esi, esp
 	call	__RTC_CheckEsp
 
-; 492  : 	cin >> colorsEnabled;
+; 506  : 	cin >> colorsEnabled;
 
 	mov	esi, esp
 	push	OFFSET ?colorsEnabled@@3_NA		; colorsEnabled
@@ -14154,7 +14154,7 @@ _TEXT	SEGMENT
 	cmp	esi, esp
 	call	__RTC_CheckEsp
 
-; 493  : 	system("cls");
+; 507  : 	system("cls");
 
 	mov	esi, esp
 	push	OFFSET ??_C@_03LCPHGAHP@cls?$AA@
@@ -14163,7 +14163,7 @@ _TEXT	SEGMENT
 	cmp	esi, esp
 	call	__RTC_CheckEsp
 
-; 494  : }
+; 508  : }
 
 	pop	edi
 	pop	esi
@@ -14189,7 +14189,7 @@ __$EHRec$ = -12						; size = 12
 _screen$ = 8						; size = 4
 ?levelOne@@YAXPAVScreen@@@Z PROC			; levelOne, COMDAT
 
-; 479  : void levelOne(Screen* screen){
+; 493  : void levelOne(Screen* screen){
 
 	push	ebp
 	mov	ebp, esp
@@ -14211,8 +14211,8 @@ _screen$ = 8						; size = 4
 	lea	eax, DWORD PTR __$EHRec$[ebp]
 	mov	DWORD PTR fs:0, eax
 
-; 480  : 
-; 481  : 	if(rand()%100 == 0){
+; 494  : 
+; 495  : 	if(rand()%100 == 0){
 
 	mov	esi, esp
 	call	DWORD PTR __imp__rand
@@ -14224,13 +14224,13 @@ _screen$ = 8						; size = 4
 	test	edx, edx
 	jne	$LN4@levelOne
 
-; 482  : 		int randcoordinates = 0;
+; 496  : 		int randcoordinates = 0;
 
 	mov	DWORD PTR _randcoordinates$5[ebp], 0
 $LN3@levelOne:
 
-; 483  : 		do{
-; 484  : 			randcoordinates = rand()%20+1;
+; 497  : 		do{
+; 498  : 			randcoordinates = rand()%20+1;
 
 	mov	esi, esp
 	call	DWORD PTR __imp__rand
@@ -14242,7 +14242,7 @@ $LN3@levelOne:
 	add	edx, 1
 	mov	DWORD PTR _randcoordinates$5[ebp], edx
 
-; 485  : 		}while(screen->stuffAt(randcoordinates, 1));
+; 499  : 		}while(screen->stuffAt(randcoordinates, 1));
 
 	push	1
 	mov	eax, DWORD PTR _randcoordinates$5[ebp]
@@ -14253,7 +14253,7 @@ $LN3@levelOne:
 	test	ecx, ecx
 	jne	SHORT $LN3@levelOne
 
-; 486  : 		EnemySoldier *newsoldier = new EnemySoldier(randcoordinates, 1, 10);
+; 500  : 		EnemySoldier *newsoldier = new EnemySoldier(randcoordinates, 1, 10);
 
 	push	32					; 00000020H
 	call	??2@YAPAXI@Z				; operator new
@@ -14285,8 +14285,8 @@ $LN8@levelOne:
 	mov	DWORD PTR _newsoldier$4[ebp], edx
 $LN4@levelOne:
 
-; 487  : 	}
-; 488  : }
+; 501  : 	}
+; 502  : }
 
 	mov	ecx, DWORD PTR __$EHRec$[ebp]
 	mov	DWORD PTR fs:0, ecx
@@ -14342,7 +14342,7 @@ __$EHRec$ = -12						; size = 12
 _args$ = 8						; size = 4
 ?processaibysingle@@YAPAXPAX@Z PROC			; processaibysingle, COMDAT
 
-; 464  : void* processaibysingle(void* args){ // multithread wrapper
+; 478  : void* processaibysingle(void* args){ // multithread wrapper
 
 	push	ebp
 	mov	ebp, esp
@@ -14364,19 +14364,19 @@ _args$ = 8						; size = 4
 	lea	eax, DWORD PTR __$EHRec$[ebp]
 	mov	DWORD PTR fs:0, eax
 
-; 465  : 	Player *p = reinterpret_cast<Player*>(args);
+; 479  : 	Player *p = reinterpret_cast<Player*>(args);
 
 	mov	eax, DWORD PTR _args$[ebp]
 	mov	DWORD PTR _p$[ebp], eax
 $LN5@processaib:
 
-; 466  : 	while(true){
+; 480  : 	while(true){
 
 	mov	eax, 1
 	test	eax, eax
 	je	$LN4@processaib
 
-; 467  : 		int numberOfEnemies = Enemy::getEnemies().size();
+; 481  : 		int numberOfEnemies = Enemy::getEnemies().size();
 
 	lea	eax, DWORD PTR $T2[ebp]
 	push	eax
@@ -14389,7 +14389,7 @@ $LN5@processaib:
 	lea	ecx, DWORD PTR $T2[ebp]
 	call	??1?$vector@PAVEnemy@@V?$allocator@PAVEnemy@@@std@@@std@@QAE@XZ ; std::vector<Enemy *,std::allocator<Enemy *> >::~vector<Enemy *,std::allocator<Enemy *> >
 
-; 468  : 		for(int i = 0; i < Enemy::getEnemies().size(); i++){
+; 482  : 		for(int i = 0; i < Enemy::getEnemies().size(); i++){
 
 	mov	DWORD PTR _i$9[ebp], 0
 	jmp	SHORT $LN3@processaib
@@ -14420,7 +14420,7 @@ $LN9@processaib:
 	test	edx, edx
 	je	$LN1@processaib
 
-; 469  : 			pthread_mutex_lock(&ai_player_mutex);
+; 483  : 			pthread_mutex_lock(&ai_player_mutex);
 
 	mov	esi, esp
 	push	OFFSET ?ai_player_mutex@@3PAUpthread_mutex_t_@@A ; ai_player_mutex
@@ -14429,7 +14429,7 @@ $LN9@processaib:
 	cmp	esi, esp
 	call	__RTC_CheckEsp
 
-; 470  : 			Enemy* enemy = Enemy::getEnemies()[i];	
+; 484  : 			Enemy* enemy = Enemy::getEnemies()[i];	
 
 	mov	eax, DWORD PTR _i$9[ebp]
 	push	eax
@@ -14449,7 +14449,7 @@ $LN9@processaib:
 	lea	ecx, DWORD PTR $T5[ebp]
 	call	??1?$vector@PAVEnemy@@V?$allocator@PAVEnemy@@@std@@@std@@QAE@XZ ; std::vector<Enemy *,std::allocator<Enemy *> >::~vector<Enemy *,std::allocator<Enemy *> >
 
-; 471  : 			enemy->processAndAct(p);
+; 485  : 			enemy->processAndAct(p);
 
 	mov	esi, esp
 	mov	eax, DWORD PTR _p$[ebp]
@@ -14462,7 +14462,7 @@ $LN9@processaib:
 	cmp	esi, esp
 	call	__RTC_CheckEsp
 
-; 472  : 			pthread_mutex_unlock(&ai_player_mutex);
+; 486  : 			pthread_mutex_unlock(&ai_player_mutex);
 
 	mov	esi, esp
 	push	OFFSET ?ai_player_mutex@@3PAUpthread_mutex_t_@@A ; ai_player_mutex
@@ -14471,7 +14471,7 @@ $LN9@processaib:
 	cmp	esi, esp
 	call	__RTC_CheckEsp
 
-; 473  : 			this_thread::sleep_for(chrono::milliseconds(AI_MILLISECOND_SPEED/numberOfEnemies));
+; 487  : 			this_thread::sleep_for(chrono::milliseconds(AI_MILLISECOND_SPEED/numberOfEnemies));
 
 	mov	eax, 1000				; 000003e8H
 	cdq
@@ -14486,21 +14486,21 @@ $LN9@processaib:
 	call	??$sleep_for@_JU?$ratio@$00$0DOI@@std@@@this_thread@std@@YAXABV?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@1@@Z ; std::this_thread::sleep_for<__int64,std::ratio<1,1000> >
 	add	esp, 4
 
-; 474  : 		}
+; 488  : 		}
 
 	jmp	$LN2@processaib
 $LN1@processaib:
 
-; 475  : 	}
+; 489  : 	}
 
 	jmp	$LN5@processaib
 $LN4@processaib:
 
-; 476  : 	return NULL;
+; 490  : 	return NULL;
 
 	xor	eax, eax
 
-; 477  : }
+; 491  : }
 
 	mov	ecx, DWORD PTR __$EHRec$[ebp]
 	mov	DWORD PTR fs:0, ecx
@@ -14769,7 +14769,7 @@ _p$ = -8						; size = 4
 _args$ = 8						; size = 4
 ?processaiwhole@@YAPAXPAX@Z PROC			; processaiwhole, COMDAT
 
-; 453  : void* processaiwhole(void* args){ // multithread wrapper
+; 467  : void* processaiwhole(void* args){ // multithread wrapper
 
 	push	ebp
 	mov	ebp, esp
@@ -14782,19 +14782,19 @@ _args$ = 8						; size = 4
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 
-; 454  : 	Player *p = reinterpret_cast<Player*>(args);
+; 468  : 	Player *p = reinterpret_cast<Player*>(args);
 
 	mov	eax, DWORD PTR _args$[ebp]
 	mov	DWORD PTR _p$[ebp], eax
 $LN2@processaiw:
 
-; 455  : 	while(true){
+; 469  : 	while(true){
 
 	mov	eax, 1
 	test	eax, eax
 	je	SHORT $LN1@processaiw
 
-; 456  : 		pthread_mutex_lock(&ai_player_mutex);
+; 470  : 		pthread_mutex_lock(&ai_player_mutex);
 
 	mov	esi, esp
 	push	OFFSET ?ai_player_mutex@@3PAUpthread_mutex_t_@@A ; ai_player_mutex
@@ -14803,14 +14803,14 @@ $LN2@processaiw:
 	cmp	esi, esp
 	call	__RTC_CheckEsp
 
-; 457  : 		Enemy::aiTurn(p);
+; 471  : 		Enemy::aiTurn(p);
 
 	mov	eax, DWORD PTR _p$[ebp]
 	push	eax
 	call	?aiTurn@Enemy@@SAXPAVLivingEntity@@@Z	; Enemy::aiTurn
 	add	esp, 4
 
-; 458  : 		pthread_mutex_unlock(&ai_player_mutex);
+; 472  : 		pthread_mutex_unlock(&ai_player_mutex);
 
 	mov	esi, esp
 	push	OFFSET ?ai_player_mutex@@3PAUpthread_mutex_t_@@A ; ai_player_mutex
@@ -14819,7 +14819,7 @@ $LN2@processaiw:
 	cmp	esi, esp
 	call	__RTC_CheckEsp
 
-; 459  : 		this_thread::sleep_for(chrono::milliseconds(AI_MILLISECOND_SPEED));
+; 473  : 		this_thread::sleep_for(chrono::milliseconds(AI_MILLISECOND_SPEED));
 
 	mov	DWORD PTR $T2[ebp], 1000		; 000003e8H
 	push	0
@@ -14831,16 +14831,16 @@ $LN2@processaiw:
 	call	??$sleep_for@_JU?$ratio@$00$0DOI@@std@@@this_thread@std@@YAXABV?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@1@@Z ; std::this_thread::sleep_for<__int64,std::ratio<1,1000> >
 	add	esp, 4
 
-; 460  : 	}
+; 474  : 	}
 
 	jmp	SHORT $LN2@processaiw
 $LN1@processaiw:
 
-; 461  : 	return NULL;
+; 475  : 	return NULL;
 
 	xor	eax, eax
 
-; 462  : }
+; 476  : }
 
 	pop	edi
 	pop	esi
@@ -14862,7 +14862,7 @@ _input$1 = -5						; size = 1
 _player$ = 8						; size = 4
 ?getInput@@YAXPAVPlayer@@@Z PROC			; getInput, COMDAT
 
-; 422  : void getInput(Player* player){
+; 436  : void getInput(Player* player){
 
 	push	ebp
 	mov	ebp, esp
@@ -14875,7 +14875,7 @@ _player$ = 8						; size = 4
 	mov	eax, -858993460				; ccccccccH
 	rep stosd
 
-; 423  : 	if(kbhit()){
+; 437  : 	if(kbhit()){
 
 	mov	esi, esp
 	call	DWORD PTR __imp__kbhit
@@ -14884,7 +14884,7 @@ _player$ = 8						; size = 4
 	test	eax, eax
 	je	$LN10@getInput
 
-; 424  : 		char input = getch();
+; 438  : 		char input = getch();
 
 	mov	esi, esp
 	call	DWORD PTR __imp__getch
@@ -14892,7 +14892,7 @@ _player$ = 8						; size = 4
 	call	__RTC_CheckEsp
 	mov	BYTE PTR _input$1[ebp], al
 
-; 425  : 		switch (input){
+; 439  : 		switch (input){
 
 	movsx	eax, BYTE PTR _input$1[ebp]
 	mov	DWORD PTR tv69[ebp], eax
@@ -14906,60 +14906,60 @@ _player$ = 8						; size = 4
 	jmp	DWORD PTR $LN13@getInput[eax*4]
 $LN6@getInput:
 
-; 426  : 		case 'w':
-; 427  : 		case 'W':
-; 428  : 			player->move(Directions::UP);
+; 440  : 		case 'w':
+; 441  : 		case 'W':
+; 442  : 			player->move(Directions::UP);
 
 	push	2
 	mov	ecx, DWORD PTR _player$[ebp]
 	call	?move@Player@@QAEXW4Directions@@@Z	; Player::move
 
-; 429  : 			break;
+; 443  : 			break;
 
 	jmp	SHORT $LN10@getInput
 $LN5@getInput:
 
-; 430  : 		case 's':
-; 431  : 		case 'S':
-; 432  : 			player->move(Directions::DOWN);
+; 444  : 		case 's':
+; 445  : 		case 'S':
+; 446  : 			player->move(Directions::DOWN);
 
 	push	-2					; fffffffeH
 	mov	ecx, DWORD PTR _player$[ebp]
 	call	?move@Player@@QAEXW4Directions@@@Z	; Player::move
 
-; 433  : 			break;
+; 447  : 			break;
 
 	jmp	SHORT $LN10@getInput
 $LN4@getInput:
 
-; 434  : 		case 'a':
-; 435  : 		case 'A':
-; 436  : 			player->move(Directions::LEFT);
+; 448  : 		case 'a':
+; 449  : 		case 'A':
+; 450  : 			player->move(Directions::LEFT);
 
 	push	-1
 	mov	ecx, DWORD PTR _player$[ebp]
 	call	?move@Player@@QAEXW4Directions@@@Z	; Player::move
 
-; 437  : 			break;
+; 451  : 			break;
 
 	jmp	SHORT $LN10@getInput
 $LN3@getInput:
 
-; 438  : 		case 'd':
-; 439  : 		case 'D':
-; 440  : 			player->move(Directions::RIGHT);
+; 452  : 		case 'd':
+; 453  : 		case 'D':
+; 454  : 			player->move(Directions::RIGHT);
 
 	push	1
 	mov	ecx, DWORD PTR _player$[ebp]
 	call	?move@Player@@QAEXW4Directions@@@Z	; Player::move
 
-; 441  : 			break;
+; 455  : 			break;
 
 	jmp	SHORT $LN10@getInput
 $LN2@getInput:
 
-; 442  : 		case ' ':
-; 443  : 			player->shoot(player->facing);
+; 456  : 		case ' ':
+; 457  : 			player->shoot(player->facing);
 
 	mov	esi, esp
 	mov	eax, DWORD PTR _player$[ebp]
@@ -14974,12 +14974,12 @@ $LN2@getInput:
 	call	__RTC_CheckEsp
 $LN10@getInput:
 
-; 444  : 			break;
-; 445  : 		default:
-; 446  : 			break;
-; 447  : 		}
-; 448  : 	}
-; 449  : }
+; 458  : 			break;
+; 459  : 		default:
+; 460  : 			break;
+; 461  : 		}
+; 462  : 	}
+; 463  : }
 
 	pop	edi
 	pop	esi
@@ -15569,12 +15569,58 @@ text$x	ENDS
 ??$?6DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@@Z ENDP ; std::operator<<<char,std::char_traits<char>,std::allocator<char> >
 ; Function compile flags: /Odtp /RTCsu /ZI
 ; File c:\users\jack\documents\visual studio 2012\projects\battelz\main\source.cpp
+;	COMDAT ?setColor@Screen@@QAEXE@Z
+_TEXT	SEGMENT
+_this$ = -8						; size = 4
+_color$ = 8						; size = 1
+?setColor@Screen@@QAEXE@Z PROC				; Screen::setColor, COMDAT
+; _this$ = ecx
+
+; 417  : 	void setColor(unsigned char color){
+
+	push	ebp
+	mov	ebp, esp
+	sub	esp, 204				; 000000ccH
+	push	ebx
+	push	esi
+	push	edi
+	push	ecx
+	lea	edi, DWORD PTR [ebp-204]
+	mov	ecx, 51					; 00000033H
+	mov	eax, -858993460				; ccccccccH
+	rep stosd
+	pop	ecx
+	mov	DWORD PTR _this$[ebp], ecx
+
+; 418  : 		this->color = color;
+
+	mov	eax, DWORD PTR _this$[ebp]
+	mov	cl, BYTE PTR _color$[ebp]
+	mov	BYTE PTR [eax+908], cl
+
+; 419  : 		colorChangedFlag = true;
+
+	mov	eax, DWORD PTR _this$[ebp]
+	mov	BYTE PTR [eax+909], 1
+
+; 420  : 	}
+
+	pop	edi
+	pop	esi
+	pop	ebx
+	mov	esp, ebp
+	pop	ebp
+	ret	4
+?setColor@Screen@@QAEXE@Z ENDP				; Screen::setColor
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu /ZI
+; File c:\users\jack\documents\visual studio 2012\projects\battelz\main\source.cpp
 ;	COMDAT ?render@Screen@@QAEXXZ
 _TEXT	SEGMENT
-tv241 = -448						; size = 4
-tv237 = -448						; size = 4
-tv182 = -444						; size = 4
-tv178 = -444						; size = 4
+tv251 = -448						; size = 4
+tv247 = -448						; size = 4
+tv192 = -444						; size = 4
+tv188 = -444						; size = 4
 $T2 = -436						; size = 12
 $T3 = -413						; size = 1
 $T4 = -404						; size = 12
@@ -15594,7 +15640,7 @@ __$EHRec$ = -12						; size = 12
 ?render@Screen@@QAEXXZ PROC				; Screen::render, COMDAT
 ; _this$ = ecx
 
-; 367  : 	void render(){
+; 366  : 	void render(){
 
 	push	ebp
 	mov	ebp, esp
@@ -15620,7 +15666,7 @@ __$EHRec$ = -12						; size = 12
 	mov	DWORD PTR fs:0, eax
 	mov	DWORD PTR _this$[ebp], ecx
 
-; 368  : 		system("cls");
+; 367  : 		system("cls");
 
 	mov	esi, esp
 	push	OFFSET ??_C@_03LCPHGAHP@cls?$AA@
@@ -15629,20 +15675,27 @@ __$EHRec$ = -12						; size = 12
 	cmp	esi, esp
 	call	__RTC_CheckEsp
 
-; 369  : 		if(colorsEnabled){
+; 368  : 		if(colorsEnabled){
 
 	movzx	eax, BYTE PTR ?colorsEnabled@@3_NA	; colorsEnabled
 	test	eax, eax
 	je	$LN10@render
 
-; 370  : 			// TODO: Actually make color byte have effect and not just act as boolean flag
-; 371  : 			if(color){
+; 369  : 			if(colorChangedFlag){
 
-	movzx	eax, BYTE PTR ?color@@3EA		; color
-	test	eax, eax
+	mov	eax, DWORD PTR _this$[ebp]
+	movzx	ecx, BYTE PTR [eax+909]
+	test	ecx, ecx
+	je	$LN10@render
+
+; 370  : 				if(color){
+
+	mov	eax, DWORD PTR _this$[ebp]
+	movzx	ecx, BYTE PTR [eax+908]
+	test	ecx, ecx
 	je	$LN15@render
 
-; 372  : 				char lColor[] = "Color @@";
+; 371  : 					char lColor[] = "Color @@";
 
 	mov	eax, DWORD PTR ??_C@_08OBFFCDMO@Color?5?$EA?$EA?$AA@
 	mov	DWORD PTR _lColor$14[ebp], eax
@@ -15651,39 +15704,43 @@ __$EHRec$ = -12						; size = 12
 	mov	dl, BYTE PTR ??_C@_08OBFFCDMO@Color?5?$EA?$EA?$AA@+8
 	mov	BYTE PTR _lColor$14[ebp+8], dl
 
-; 373  : 				// split hex number doesn't work correctly
-; 374  : 				int secondNum = color%0x10; // maybe need to change it to 0x10 (0xF is like 9 for dec)
+; 372  : 					// split hex number doesn't work correctly
+; 373  : 					int secondNum = color%0x10; // maybe need to change it to 0x10 (0xF is like 9 for dec)
 
-	movzx	eax, BYTE PTR ?color@@3EA		; color
-	and	eax, -2147483633			; 8000000fH
-	jns	SHORT $LN28@render
-	dec	eax
-	or	eax, -16				; fffffff0H
-	inc	eax
-$LN28@render:
-	mov	DWORD PTR _secondNum$13[ebp], eax
+	mov	eax, DWORD PTR _this$[ebp]
+	movzx	ecx, BYTE PTR [eax+908]
+	and	ecx, -2147483633			; 8000000fH
+	jns	SHORT $LN29@render
+	dec	ecx
+	or	ecx, -16				; fffffff0H
+	inc	ecx
+$LN29@render:
+	mov	DWORD PTR _secondNum$13[ebp], ecx
 
-; 375  : 				color/= 0x10;
+; 374  : 					color/= 0x10;
 
-	movzx	eax, BYTE PTR ?color@@3EA		; color
+	mov	eax, DWORD PTR _this$[ebp]
+	movzx	eax, BYTE PTR [eax+908]
 	cdq
 	and	edx, 15					; 0000000fH
 	add	eax, edx
 	sar	eax, 4
-	mov	BYTE PTR ?color@@3EA, al		; color
+	mov	ecx, DWORD PTR _this$[ebp]
+	mov	BYTE PTR [ecx+908], al
 
-; 376  : 				int firstNum = color;
+; 375  : 					int firstNum = color;
 
-	movzx	eax, BYTE PTR ?color@@3EA		; color
-	mov	DWORD PTR _firstNum$12[ebp], eax
+	mov	eax, DWORD PTR _this$[ebp]
+	movzx	ecx, BYTE PTR [eax+908]
+	mov	DWORD PTR _firstNum$12[ebp], ecx
 
-; 377  : 
-; 378  : 				if(firstNum <= 9){
+; 376  : 
+; 377  : 					if(firstNum <= 9){
 
 	cmp	DWORD PTR _firstNum$12[ebp], 9
 	jg	SHORT $LN14@render
 
-; 379  : 					lColor[6] = firstNum+48; // add ASCII offset
+; 378  : 						lColor[6] = firstNum+48; // add ASCII offset
 
 	mov	eax, DWORD PTR _firstNum$12[ebp]
 	add	eax, 48					; 00000030H
@@ -15691,13 +15748,13 @@ $LN28@render:
 	imul	ecx, 6
 	mov	BYTE PTR _lColor$14[ebp+ecx], al
 
-; 380  : 				}
-; 381  : 				else{
+; 379  : 					}
+; 380  : 					else{
 
 	jmp	SHORT $LN13@render
 $LN14@render:
 
-; 382  : 					lColor[6] = firstNum+55; // add ascii offset (A+55 = 65, character code for 'A')
+; 381  : 						lColor[6] = firstNum+55; // add ascii offset (A+55 = 65, character code for 'A')
 
 	mov	eax, DWORD PTR _firstNum$12[ebp]
 	add	eax, 55					; 00000037H
@@ -15706,14 +15763,14 @@ $LN14@render:
 	mov	BYTE PTR _lColor$14[ebp+ecx], al
 $LN13@render:
 
-; 383  : 				}
-; 384  : 
-; 385  : 				if(secondNum <= 9){
+; 382  : 					}
+; 383  : 
+; 384  : 					if(secondNum <= 9){
 
 	cmp	DWORD PTR _secondNum$13[ebp], 9
 	jg	SHORT $LN12@render
 
-; 386  : 					lColor[7] = secondNum+48; // add ASCII offset
+; 385  : 						lColor[7] = secondNum+48; // add ASCII offset
 
 	mov	eax, DWORD PTR _secondNum$13[ebp]
 	add	eax, 48					; 00000030H
@@ -15721,13 +15778,13 @@ $LN13@render:
 	imul	ecx, 7
 	mov	BYTE PTR _lColor$14[ebp+ecx], al
 
-; 387  : 				}
-; 388  : 				else{
+; 386  : 					}
+; 387  : 					else{
 
 	jmp	SHORT $LN11@render
 $LN12@render:
 
-; 389  : 					lColor[7] = secondNum+55; // add ascii odffset (A+55 = 65, character code for 'A')
+; 388  : 						lColor[7] = secondNum+55; // add ascii odffset (A+55 = 65, character code for 'A')
 
 	mov	eax, DWORD PTR _secondNum$13[ebp]
 	add	eax, 55					; 00000037H
@@ -15736,9 +15793,9 @@ $LN12@render:
 	mov	BYTE PTR _lColor$14[ebp+ecx], al
 $LN11@render:
 
-; 390  : 				}
-; 391  : 				
-; 392  : 				system(lColor);
+; 389  : 					}
+; 390  : 				
+; 391  : 					system(lColor);
 
 	mov	esi, esp
 	lea	eax, DWORD PTR _lColor$14[ebp]
@@ -15748,30 +15805,37 @@ $LN11@render:
 	cmp	esi, esp
 	call	__RTC_CheckEsp
 
-; 393  : 				color = 0;
+; 392  : 					color = 0;
 
-	mov	BYTE PTR ?color@@3EA, 0			; color
+	mov	eax, DWORD PTR _this$[ebp]
+	mov	BYTE PTR [eax+908], 0
 
-; 394  : 			}
-; 395  : 			else{
+; 393  : 				}
+; 394  : 				else{
 
 	jmp	SHORT $LN10@render
 $LN15@render:
 
-; 396  : 				system("Color 0F");
+; 395  : 					system("Color 07"); // bit 0, 1, 2
 
 	mov	esi, esp
-	push	OFFSET ??_C@_08ODPOOMBI@Color?50F?$AA@
+	push	OFFSET ??_C@_08NFNKKEKP@Color?507?$AA@
 	call	DWORD PTR __imp__system
 	add	esp, 4
 	cmp	esi, esp
 	call	__RTC_CheckEsp
+
+; 396  : 					colorChangedFlag = false;
+
+	mov	eax, DWORD PTR _this$[ebp]
+	mov	BYTE PTR [eax+909], 0
 $LN10@render:
 
-; 397  : 			}
-; 398  : 		}
-; 399  : 
-; 400  : 		memset(&screen[0][0], this->blank, sizeof(screen)); // reset screen
+; 397  : 				}
+; 398  : 			}
+; 399  : 		}
+; 400  : 
+; 401  : 		memset(&screen[0][0], this->blank, sizeof(screen)); // reset screen
 
 	push	900					; 00000384H
 	mov	eax, DWORD PTR _this$[ebp]
@@ -15787,7 +15851,7 @@ $LN10@render:
 	call	_memset
 	add	esp, 12					; 0000000cH
 
-; 401  : 		cout << mainPlayer->getName() << ":  Ammo:  " << mainPlayer->ammo << " Health: " << mainPlayer->health << endl; // playerinfo
+; 402  : 		cout << mainPlayer->getName() << ":  Ammo:  " << mainPlayer->ammo << " Health: " << mainPlayer->health << endl; // playerinfo
 
 	mov	esi, esp
 	mov	eax, DWORD PTR __imp_?endl@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@1@AAV21@@Z
@@ -15810,11 +15874,11 @@ $LN10@render:
 	mov	ecx, DWORD PTR _this$[ebp]
 	mov	ecx, DWORD PTR [ecx+904]
 	call	?getName@Player@@QAE?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ ; Player::getName
-	mov	DWORD PTR tv182[ebp], eax
-	mov	edx, DWORD PTR tv182[ebp]
-	mov	DWORD PTR tv237[ebp], edx
+	mov	DWORD PTR tv192[ebp], eax
+	mov	edx, DWORD PTR tv192[ebp]
+	mov	DWORD PTR tv247[ebp], edx
 	mov	DWORD PTR __$EHRec$[ebp+8], 0
-	mov	eax, DWORD PTR tv237[ebp]
+	mov	eax, DWORD PTR tv247[ebp]
 	push	eax
 	mov	ecx, DWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
 	push	ecx
@@ -15842,11 +15906,11 @@ $LN10@render:
 	lea	ecx, DWORD PTR $T7[ebp]
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 
-; 402  : 		Bullet::renderBullets();
+; 403  : 		Bullet::renderBullets();
 
 	call	?renderBullets@Bullet@@SAXXZ		; Bullet::renderBullets
 
-; 403  : 		for(vector<OnScreen*>::iterator iter = OnScreen::visibleItems.begin(); iter != OnScreen::visibleItems.end(); iter++){
+; 404  : 		for(vector<OnScreen*>::iterator iter = OnScreen::visibleItems.begin(); iter != OnScreen::visibleItems.end(); iter++){
 
 	lea	eax, DWORD PTR _iter$11[ebp]
 	push	eax
@@ -15867,11 +15931,11 @@ $LN9@render:
 	push	eax
 	mov	ecx, OFFSET ?visibleItems@OnScreen@@2V?$vector@PAVOnScreen@@V?$allocator@PAVOnScreen@@@std@@@std@@A ; OnScreen::visibleItems
 	call	?end@?$vector@PAVOnScreen@@V?$allocator@PAVOnScreen@@@std@@@std@@QAE?AV?$_Vector_iterator@V?$_Vector_val@U?$_Simple_types@PAVOnScreen@@@std@@@std@@@2@XZ ; std::vector<OnScreen *,std::allocator<OnScreen *> >::end
-	mov	DWORD PTR tv178[ebp], eax
-	mov	ecx, DWORD PTR tv178[ebp]
-	mov	DWORD PTR tv241[ebp], ecx
+	mov	DWORD PTR tv188[ebp], eax
+	mov	ecx, DWORD PTR tv188[ebp]
+	mov	DWORD PTR tv251[ebp], ecx
 	mov	BYTE PTR __$EHRec$[ebp+8], 2
-	mov	edx, DWORD PTR tv241[ebp]
+	mov	edx, DWORD PTR tv251[ebp]
 	push	edx
 	lea	ecx, DWORD PTR _iter$11[ebp]
 	call	??9?$_Vector_const_iterator@V?$_Vector_val@U?$_Simple_types@PAVOnScreen@@@std@@@std@@@std@@QBE_NABV01@@Z ; std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<OnScreen *> > >::operator!=
@@ -15883,14 +15947,14 @@ $LN9@render:
 	test	eax, eax
 	je	SHORT $LN7@render
 
-; 404  : 			OnScreen *item = *iter;
+; 405  : 			OnScreen *item = *iter;
 
 	lea	ecx, DWORD PTR _iter$11[ebp]
 	call	??D?$_Vector_iterator@V?$_Vector_val@U?$_Simple_types@PAVOnScreen@@@std@@@std@@@std@@QBEAAPAVOnScreen@@XZ ; std::_Vector_iterator<std::_Vector_val<std::_Simple_types<OnScreen *> > >::operator*
 	mov	eax, DWORD PTR [eax]
 	mov	DWORD PTR _item$10[ebp], eax
 
-; 405  : 			screen[item->getLocation().y][item->getLocation().x] = item->toChar();
+; 406  : 			screen[item->getLocation().y][item->getLocation().x] = item->toChar();
 
 	mov	eax, DWORD PTR _item$10[ebp]
 	mov	edx, DWORD PTR [eax]
@@ -15917,14 +15981,14 @@ $LN9@render:
 	jmp	$LN8@render
 $LN7@render:
 
-; 406  : 		}
+; 407  : 		}
 
 	mov	DWORD PTR __$EHRec$[ebp+8], -1
 	lea	ecx, DWORD PTR _iter$11[ebp]
 	call	??1?$_Vector_iterator@V?$_Vector_val@U?$_Simple_types@PAVOnScreen@@@std@@@std@@@std@@QAE@XZ
 
-; 407  : 
-; 408  : 		for(int r = 0; r < NUM_OF_ROWS; r++){ // render screen
+; 408  : 
+; 409  : 		for(int r = 0; r < NUM_OF_ROWS; r++){ // render screen
 
 	mov	DWORD PTR _r$9[ebp], 0
 	jmp	SHORT $LN6@render
@@ -15936,7 +16000,7 @@ $LN6@render:
 	cmp	DWORD PTR _r$9[ebp], 20			; 00000014H
 	jge	SHORT $LN4@render
 
-; 409  : 			for(int c = 0; c < NUM_OF_COLS; c++){
+; 410  : 			for(int c = 0; c < NUM_OF_COLS; c++){
 
 	mov	DWORD PTR _c$8[ebp], 0
 	jmp	SHORT $LN3@render
@@ -15948,7 +16012,7 @@ $LN3@render:
 	cmp	DWORD PTR _c$8[ebp], 45			; 0000002dH
 	jge	SHORT $LN1@render
 
-; 410  : 				cout << this->screen[r][c];
+; 411  : 				cout << this->screen[r][c];
 
 	mov	eax, DWORD PTR _r$9[ebp]
 	imul	eax, 45					; 0000002dH
@@ -15961,12 +16025,12 @@ $LN3@render:
 	call	??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@D@Z ; std::operator<<<std::char_traits<char> >
 	add	esp, 8
 
-; 411  : 			}
+; 412  : 			}
 
 	jmp	SHORT $LN2@render
 $LN1@render:
 
-; 412  : 			cout << "\n";
+; 413  : 			cout << "\n";
 
 	push	OFFSET ??_C@_01EEMJAFIK@?6?$AA@
 	mov	eax, DWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
@@ -15974,18 +16038,17 @@ $LN1@render:
 	call	??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z ; std::operator<<<std::char_traits<char> >
 	add	esp, 8
 
-; 413  : 		}
+; 414  : 		}	
 
 	jmp	SHORT $LN5@render
 $LN4@render:
 
-; 414  : 
 ; 415  : 	}
 
 	push	edx
 	mov	ecx, ebp
 	push	eax
-	lea	edx, DWORD PTR $LN27@render
+	lea	edx, DWORD PTR $LN28@render
 	call	@_RTC_CheckStackVars@8
 	pop	eax
 	pop	edx
@@ -16004,23 +16067,23 @@ $LN4@render:
 	mov	esp, ebp
 	pop	ebp
 	ret	0
-$LN27@render:
+$LN28@render:
 	DD	2
-	DD	$LN26@render
-$LN26@render:
+	DD	$LN27@render
+$LN27@render:
 	DD	-44					; ffffffd4H
 	DD	9
-	DD	$LN23@render
+	DD	$LN24@render
 	DD	-88					; ffffffa8H
 	DD	12					; 0000000cH
-	DD	$LN24@render
-$LN24@render:
+	DD	$LN25@render
+$LN25@render:
 	DB	105					; 00000069H
 	DB	116					; 00000074H
 	DB	101					; 00000065H
 	DB	114					; 00000072H
 	DB	0
-$LN23@render:
+$LN24@render:
 	DB	108					; 0000006cH
 	DB	67					; 00000043H
 	DB	111					; 0000006fH
@@ -16063,7 +16126,7 @@ _c$ = 12						; size = 4
 ?stuffAt@Screen@@QAE_NHH@Z PROC				; Screen::stuffAt, COMDAT
 ; _this$ = ecx
 
-; 361  : 	bool stuffAt(int r, int c){
+; 360  : 	bool stuffAt(int r, int c){
 
 	push	ebp
 	mov	ebp, esp
@@ -16079,7 +16142,7 @@ _c$ = 12						; size = 4
 	pop	ecx
 	mov	DWORD PTR _this$[ebp], ecx
 
-; 362  : 		if(screen[r][c] == '-'){ 
+; 361  : 		if(screen[r][c] == '-'){ 
 
 	mov	eax, DWORD PTR _r$[ebp]
 	imul	eax, 45					; 0000002dH
@@ -16089,19 +16152,19 @@ _c$ = 12						; size = 4
 	cmp	edx, 45					; 0000002dH
 	jne	SHORT $LN1@stuffAt
 
-; 363  : 			return false;
+; 362  : 			return false;
 
 	xor	al, al
 	jmp	SHORT $LN2@stuffAt
 $LN1@stuffAt:
 
-; 364  : 		}
-; 365  : 		return true;
+; 363  : 		}
+; 364  : 		return true;
 
 	mov	al, 1
 $LN2@stuffAt:
 
-; 366  : 	}
+; 365  : 	}
 
 	pop	edi
 	pop	esi
@@ -16121,7 +16184,7 @@ _mainPlayer$ = 12					; size = 4
 ??0Screen@@QAE@DPAVPlayer@@@Z PROC			; Screen::Screen, COMDAT
 ; _this$ = ecx
 
-; 356  : 	Screen(char initial, Player *mainPlayer){
+; 353  : 	Screen(char initial, Player *mainPlayer){
 
 	push	ebp
 	mov	ebp, esp
@@ -16137,19 +16200,29 @@ _mainPlayer$ = 12					; size = 4
 	pop	ecx
 	mov	DWORD PTR _this$[ebp], ecx
 
-; 357  : 		this->blank = initial;
+; 354  : 		this->color = 0;
+
+	mov	eax, DWORD PTR _this$[ebp]
+	mov	BYTE PTR [eax+908], 0
+
+; 355  : 		this->colorChangedFlag = false;
+
+	mov	eax, DWORD PTR _this$[ebp]
+	mov	BYTE PTR [eax+909], 0
+
+; 356  : 		this->blank = initial;
 
 	mov	eax, DWORD PTR _this$[ebp]
 	mov	cl, BYTE PTR _initial$[ebp]
 	mov	BYTE PTR [eax+900], cl
 
-; 358  : 		this->mainPlayer = mainPlayer;
+; 357  : 		this->mainPlayer = mainPlayer;
 
 	mov	eax, DWORD PTR _this$[ebp]
 	mov	ecx, DWORD PTR _mainPlayer$[ebp]
 	mov	DWORD PTR [eax+904], ecx
 
-; 359  : 		memset(&screen[0][0], initial, sizeof(screen)); // in lieu of double for
+; 358  : 		memset(&screen[0][0], initial, sizeof(screen)); // in lieu of double for
 
 	push	900					; 00000384H
 	movsx	eax, BYTE PTR _initial$[ebp]
@@ -16164,7 +16237,7 @@ _mainPlayer$ = 12					; size = 4
 	call	_memset
 	add	esp, 12					; 0000000cH
 
-; 360  : 	}
+; 359  : 	}
 
 	mov	eax, DWORD PTR _this$[ebp]
 	pop	edi
@@ -16260,7 +16333,7 @@ _this$ = -8						; size = 4
 ?toChar@EnemySoldier@@MAEDXZ PROC			; EnemySoldier::toChar, COMDAT
 ; _this$ = ecx
 
-; 348  : 	virtual char toChar(){
+; 345  : 	virtual char toChar(){
 
 	push	ebp
 	mov	ebp, esp
@@ -16276,11 +16349,11 @@ _this$ = -8						; size = 4
 	pop	ecx
 	mov	DWORD PTR _this$[ebp], ecx
 
-; 349  : 		return 'E';
+; 346  : 		return 'E';
 
 	mov	al, 69					; 00000045H
 
-; 350  : 	}
+; 347  : 	}
 
 	pop	edi
 	pop	esi
@@ -16301,7 +16374,7 @@ _target$ = 8						; size = 4
 ?processAndAct@EnemySoldier@@UAEXPAVLivingEntity@@@Z PROC ; EnemySoldier::processAndAct, COMDAT
 ; _this$ = ecx
 
-; 312  : 	void processAndAct(LivingEntity *target){
+; 309  : 	void processAndAct(LivingEntity *target){
 
 	push	ebp
 	mov	ebp, esp
@@ -16317,7 +16390,7 @@ _target$ = 8						; size = 4
 	pop	ecx
 	mov	DWORD PTR _this$[ebp], ecx
 
-; 313  : 		Point* targetLocation = &target->getLocation();
+; 310  : 		Point* targetLocation = &target->getLocation();
 
 	lea	eax, DWORD PTR $T1[ebp]
 	push	eax
@@ -16325,7 +16398,7 @@ _target$ = 8						; size = 4
 	call	?getLocation@OnScreen@@QAE?AVPoint@@XZ	; OnScreen::getLocation
 	mov	DWORD PTR _targetLocation$[ebp], eax
 
-; 314  : 		if(targetLocation->x != this->location.x){
+; 311  : 		if(targetLocation->x != this->location.x){
 
 	mov	eax, DWORD PTR _targetLocation$[ebp]
 	mov	ecx, DWORD PTR _this$[ebp]
@@ -16333,7 +16406,7 @@ _target$ = 8						; size = 4
 	cmp	edx, DWORD PTR [ecx+4]
 	je	$LN14@processAnd
 
-; 315  : 			if(targetLocation->y > this->location.y){ // move
+; 312  : 			if(targetLocation->y > this->location.y){ // move
 
 	mov	eax, DWORD PTR _targetLocation$[ebp]
 	mov	ecx, DWORD PTR _this$[ebp]
@@ -16341,7 +16414,7 @@ _target$ = 8						; size = 4
 	cmp	edx, DWORD PTR [ecx+8]
 	jle	SHORT $LN13@processAnd
 
-; 316  : 				this->move(Directions::DOWN, this->speed);
+; 313  : 				this->move(Directions::DOWN, this->speed);
 
 	mov	esi, esp
 	mov	eax, DWORD PTR _this$[ebp]
@@ -16358,8 +16431,8 @@ _target$ = 8						; size = 4
 	jmp	$LN12@processAnd
 $LN13@processAnd:
 
-; 317  : 			}
-; 318  : 			else if(targetLocation->y < this->location.y){ // move
+; 314  : 			}
+; 315  : 			else if(targetLocation->y < this->location.y){ // move
 
 	mov	eax, DWORD PTR _targetLocation$[ebp]
 	mov	ecx, DWORD PTR _this$[ebp]
@@ -16367,7 +16440,7 @@ $LN13@processAnd:
 	cmp	edx, DWORD PTR [ecx+8]
 	jge	SHORT $LN11@processAnd
 
-; 319  : 				this->move(Directions::UP, this->speed);
+; 316  : 				this->move(Directions::UP, this->speed);
 
 	mov	esi, esp
 	mov	eax, DWORD PTR _this$[ebp]
@@ -16384,27 +16457,27 @@ $LN13@processAnd:
 	jmp	SHORT $LN12@processAnd
 $LN11@processAnd:
 
-; 320  : 			}
-; 321  : 			else if(ammo == 0){ // no ammo
+; 317  : 			}
+; 318  : 			else if(ammo == 0){ // no ammo
 
 	mov	eax, DWORD PTR _this$[ebp]
 	cmp	DWORD PTR [eax+24], 0
 	jne	SHORT $LN9@processAnd
 
-; 322  : 				ammo = magSize;
+; 319  : 				ammo = magSize;
 
 	mov	eax, DWORD PTR _this$[ebp]
 	mov	ecx, DWORD PTR _this$[ebp]
 	mov	edx, DWORD PTR [ecx+28]
 	mov	DWORD PTR [eax+24], edx
 
-; 323  : 			}
-; 324  : 			else{ // turn and shoot
+; 320  : 			}
+; 321  : 			else{ // turn and shoot
 
 	jmp	SHORT $LN12@processAnd
 $LN9@processAnd:
 
-; 325  : 				if(targetLocation->x > this->location.x){
+; 322  : 				if(targetLocation->x > this->location.x){
 
 	mov	eax, DWORD PTR _targetLocation$[ebp]
 	mov	ecx, DWORD PTR _this$[ebp]
@@ -16412,25 +16485,25 @@ $LN9@processAnd:
 	cmp	edx, DWORD PTR [ecx+4]
 	jle	SHORT $LN7@processAnd
 
-; 326  : 					this->facing = Directions::RIGHT;
+; 323  : 					this->facing = Directions::RIGHT;
 
 	mov	eax, DWORD PTR _this$[ebp]
 	mov	DWORD PTR [eax+12], 1
 
-; 327  : 				}
-; 328  : 				else{
+; 324  : 				}
+; 325  : 				else{
 
 	jmp	SHORT $LN6@processAnd
 $LN7@processAnd:
 
-; 329  : 					this->facing = Directions::LEFT;
+; 326  : 					this->facing = Directions::LEFT;
 
 	mov	eax, DWORD PTR _this$[ebp]
 	mov	DWORD PTR [eax+12], -1
 $LN6@processAnd:
 
-; 330  : 				}
-; 331  : 				this->shoot(this->facing);
+; 327  : 				}
+; 328  : 				this->shoot(this->facing);
 
 	mov	esi, esp
 	mov	eax, DWORD PTR _this$[ebp]
@@ -16445,32 +16518,32 @@ $LN6@processAnd:
 	call	__RTC_CheckEsp
 $LN12@processAnd:
 
-; 332  : 			}
+; 329  : 			}
 
 	jmp	SHORT $LN15@processAnd
 $LN14@processAnd:
 
-; 333  : 		}
-; 334  : 		else if(ammo == 0){
+; 330  : 		}
+; 331  : 		else if(ammo == 0){
 
 	mov	eax, DWORD PTR _this$[ebp]
 	cmp	DWORD PTR [eax+24], 0
 	jne	SHORT $LN4@processAnd
 
-; 335  : 			ammo = magSize;
+; 332  : 			ammo = magSize;
 
 	mov	eax, DWORD PTR _this$[ebp]
 	mov	ecx, DWORD PTR _this$[ebp]
 	mov	edx, DWORD PTR [ecx+28]
 	mov	DWORD PTR [eax+24], edx
 
-; 336  : 		}
-; 337  : 		else{ // turn and shoot
+; 333  : 		}
+; 334  : 		else{ // turn and shoot
 
 	jmp	SHORT $LN15@processAnd
 $LN4@processAnd:
 
-; 338  : 			if(targetLocation->y > this->location.y){
+; 335  : 			if(targetLocation->y > this->location.y){
 
 	mov	eax, DWORD PTR _targetLocation$[ebp]
 	mov	ecx, DWORD PTR _this$[ebp]
@@ -16478,25 +16551,25 @@ $LN4@processAnd:
 	cmp	edx, DWORD PTR [ecx+8]
 	jle	SHORT $LN2@processAnd
 
-; 339  : 				this->facing = Directions::DOWN;
+; 336  : 				this->facing = Directions::DOWN;
 
 	mov	eax, DWORD PTR _this$[ebp]
 	mov	DWORD PTR [eax+12], -2			; fffffffeH
 
-; 340  : 			}
-; 341  : 			else{
+; 337  : 			}
+; 338  : 			else{
 
 	jmp	SHORT $LN1@processAnd
 $LN2@processAnd:
 
-; 342  : 				this->facing = Directions::UP;
+; 339  : 				this->facing = Directions::UP;
 
 	mov	eax, DWORD PTR _this$[ebp]
 	mov	DWORD PTR [eax+12], 2
 $LN1@processAnd:
 
-; 343  : 			}
-; 344  : 			this->shoot(this->facing);
+; 340  : 			}
+; 341  : 			this->shoot(this->facing);
 
 	mov	esi, esp
 	mov	eax, DWORD PTR _this$[ebp]
@@ -16511,8 +16584,8 @@ $LN1@processAnd:
 	call	__RTC_CheckEsp
 $LN15@processAnd:
 
-; 345  : 		}
-; 346  : 	}
+; 342  : 		}
+; 343  : 	}
 
 	pop	edi
 	pop	esi
@@ -16539,7 +16612,7 @@ _dir$ = 8						; size = 4
 ?shoot@EnemySoldier@@UAEXW4Directions@@@Z PROC		; EnemySoldier::shoot, COMDAT
 ; _this$ = ecx
 
-; 308  : 	void shoot(Directions dir){
+; 305  : 	void shoot(Directions dir){
 
 	push	ebp
 	mov	ebp, esp
@@ -16564,7 +16637,7 @@ _dir$ = 8						; size = 4
 	mov	DWORD PTR fs:0, eax
 	mov	DWORD PTR _this$[ebp], ecx
 
-; 309  : 		Bullet *shot = new Bullet(1, facing, this->location.x, this->location.y);
+; 306  : 		Bullet *shot = new Bullet(1, facing, this->location.x, this->location.y);
 
 	push	24					; 00000018H
 	call	??2@YAPAXI@Z				; operator new
@@ -16597,7 +16670,7 @@ $LN4@shoot:
 	mov	ecx, DWORD PTR $T2[ebp]
 	mov	DWORD PTR _shot$[ebp], ecx
 
-; 310  : 		ammo--;
+; 307  : 		ammo--;
 
 	mov	eax, DWORD PTR _this$[ebp]
 	mov	ecx, DWORD PTR [eax+24]
@@ -16605,7 +16678,7 @@ $LN4@shoot:
 	mov	edx, DWORD PTR _this$[ebp]
 	mov	DWORD PTR [edx+24], ecx
 
-; 311  : 	}
+; 308  : 	}
 
 	mov	ecx, DWORD PTR __$EHRec$[ebp]
 	mov	DWORD PTR fs:0, ecx
@@ -16652,7 +16725,7 @@ _speed$ = 28						; size = 4
 ??0EnemySoldier@@QAE@HHMHHH@Z PROC			; EnemySoldier::EnemySoldier, COMDAT
 ; _this$ = ecx
 
-; 300  : 	EnemySoldier(int row, int col, float health = 100.0, int ammo = 1, int magsize = 1, int speed = 1){
+; 297  : 	EnemySoldier(int row, int col, float health = 100.0, int ammo = 1, int magsize = 1, int speed = 1){
 
 	push	ebp
 	mov	ebp, esp
@@ -16672,44 +16745,44 @@ _speed$ = 28						; size = 4
 	mov	eax, DWORD PTR _this$[ebp]
 	mov	DWORD PTR [eax], OFFSET ??_7EnemySoldier@@6B@
 
-; 301  : 		this->location.x = col;
+; 298  : 		this->location.x = col;
 
 	mov	eax, DWORD PTR _this$[ebp]
 	mov	ecx, DWORD PTR _col$[ebp]
 	mov	DWORD PTR [eax+4], ecx
 
-; 302  : 		this->location.y = row;
+; 299  : 		this->location.y = row;
 
 	mov	eax, DWORD PTR _this$[ebp]
 	mov	ecx, DWORD PTR _row$[ebp]
 	mov	DWORD PTR [eax+8], ecx
 
-; 303  : 		this->health = health;
+; 300  : 		this->health = health;
 
 	mov	eax, DWORD PTR _this$[ebp]
 	movss	xmm0, DWORD PTR _health$[ebp]
 	movss	DWORD PTR [eax+16], xmm0
 
-; 304  : 		this->ammo = ammo;
+; 301  : 		this->ammo = ammo;
 
 	mov	eax, DWORD PTR _this$[ebp]
 	mov	ecx, DWORD PTR _ammo$[ebp]
 	mov	DWORD PTR [eax+24], ecx
 
-; 305  : 		this->speed = speed;
+; 302  : 		this->speed = speed;
 
 	mov	eax, DWORD PTR _this$[ebp]
 	mov	ecx, DWORD PTR _speed$[ebp]
 	mov	DWORD PTR [eax+20], ecx
 
-; 306  : 		this->magSize = magSize;
+; 303  : 		this->magSize = magSize;
 
 	mov	eax, DWORD PTR _this$[ebp]
 	mov	ecx, DWORD PTR _this$[ebp]
 	mov	edx, DWORD PTR [ecx+28]
 	mov	DWORD PTR [eax+28], edx
 
-; 307  : 	}
+; 304  : 	}
 
 	mov	eax, DWORD PTR _this$[ebp]
 	pop	edi
@@ -16756,7 +16829,7 @@ text$yd	ENDS
 text$yc	SEGMENT
 ??__E?enemies@Enemy@@1V?$vector@PAVEnemy@@V?$allocator@PAVEnemy@@@std@@@std@@A@@YAXXZ PROC ; `dynamic initializer for 'Enemy::enemies'', COMDAT
 
-; 296  : vector<Enemy*> Enemy::enemies;
+; 293  : vector<Enemy*> Enemy::enemies;
 
 	push	ebp
 	mov	ebp, esp
@@ -21323,7 +21396,7 @@ __$EHRec$ = -12						; size = 12
 ___$ReturnUdt$ = 8					; size = 4
 ?getEnemies@Enemy@@SA?AV?$vector@PAVEnemy@@V?$allocator@PAVEnemy@@@std@@@std@@XZ PROC ; Enemy::getEnemies, COMDAT
 
-; 287  : 	static vector<Enemy*> getEnemies(){
+; 284  : 	static vector<Enemy*> getEnemies(){
 
 	push	ebp
 	mov	ebp, esp
@@ -21346,14 +21419,14 @@ ___$ReturnUdt$ = 8					; size = 4
 	mov	DWORD PTR fs:0, eax
 	mov	DWORD PTR $T2[ebp], 0
 
-; 288  : 		vector<Enemy*> retval = enemies;
+; 285  : 		vector<Enemy*> retval = enemies;
 
 	push	OFFSET ?enemies@Enemy@@1V?$vector@PAVEnemy@@V?$allocator@PAVEnemy@@@std@@@std@@A ; Enemy::enemies
 	lea	ecx, DWORD PTR _retval$[ebp]
 	call	??0?$vector@PAVEnemy@@V?$allocator@PAVEnemy@@@std@@@std@@QAE@ABV01@@Z ; std::vector<Enemy *,std::allocator<Enemy *> >::vector<Enemy *,std::allocator<Enemy *> >
 	mov	DWORD PTR __$EHRec$[ebp+8], 0
 
-; 289  : 		return retval;
+; 286  : 		return retval;
 
 	lea	eax, DWORD PTR _retval$[ebp]
 	push	eax
@@ -21367,7 +21440,7 @@ ___$ReturnUdt$ = 8					; size = 4
 	call	??1?$vector@PAVEnemy@@V?$allocator@PAVEnemy@@@std@@@std@@QAE@XZ ; std::vector<Enemy *,std::allocator<Enemy *> >::~vector<Enemy *,std::allocator<Enemy *> >
 	mov	eax, DWORD PTR ___$ReturnUdt$[ebp]
 
-; 290  : 	}
+; 287  : 	}
 
 	push	edx
 	mov	ecx, ebp
@@ -21434,7 +21507,7 @@ __$EHRec$ = -12						; size = 12
 _target$ = 8						; size = 4
 ?aiTurn@Enemy@@SAXPAVLivingEntity@@@Z PROC		; Enemy::aiTurn, COMDAT
 
-; 281  : 	static void aiTurn(LivingEntity *target){
+; 278  : 	static void aiTurn(LivingEntity *target){
 
 	push	ebp
 	mov	ebp, esp
@@ -21456,7 +21529,7 @@ _target$ = 8						; size = 4
 	lea	eax, DWORD PTR __$EHRec$[ebp]
 	mov	DWORD PTR fs:0, eax
 
-; 282  : 		for(vector<Enemy*>::iterator iter = enemies.begin(); iter != enemies.end(); iter++){
+; 279  : 		for(vector<Enemy*>::iterator iter = enemies.begin(); iter != enemies.end(); iter++){
 
 	lea	eax, DWORD PTR _iter$6[ebp]
 	push	eax
@@ -21493,14 +21566,14 @@ $LN3@aiTurn:
 	test	eax, eax
 	je	SHORT $LN1@aiTurn
 
-; 283  : 			Enemy *item = *iter;
+; 280  : 			Enemy *item = *iter;
 
 	lea	ecx, DWORD PTR _iter$6[ebp]
 	call	??D?$_Vector_iterator@V?$_Vector_val@U?$_Simple_types@PAVEnemy@@@std@@@std@@@std@@QBEAAPAVEnemy@@XZ ; std::_Vector_iterator<std::_Vector_val<std::_Simple_types<Enemy *> > >::operator*
 	mov	eax, DWORD PTR [eax]
 	mov	DWORD PTR _item$5[ebp], eax
 
-; 284  : 			item->processAndAct(target);
+; 281  : 			item->processAndAct(target);
 
 	mov	esi, esp
 	mov	eax, DWORD PTR _target$[ebp]
@@ -21515,13 +21588,13 @@ $LN3@aiTurn:
 	jmp	$LN2@aiTurn
 $LN1@aiTurn:
 
-; 285  : 		}
+; 282  : 		}
 
 	mov	DWORD PTR __$EHRec$[ebp+8], -1
 	lea	ecx, DWORD PTR _iter$6[ebp]
 	call	??1?$_Vector_iterator@V?$_Vector_val@U?$_Simple_types@PAVEnemy@@@std@@@std@@@std@@QAE@XZ
 
-; 286  : 	}
+; 283  : 	}
 
 	push	edx
 	mov	ecx, ebp
@@ -21595,7 +21668,7 @@ __$EHRec$ = -12						; size = 12
 ??1Enemy@@UAE@XZ PROC					; Enemy::~Enemy, COMDAT
 ; _this$ = ecx
 
-; 272  : 	~Enemy(){
+; 269  : 	~Enemy(){
 
 	push	ebp
 	mov	ebp, esp
@@ -21623,7 +21696,7 @@ __$EHRec$ = -12						; size = 12
 	mov	DWORD PTR [eax], OFFSET ??_7Enemy@@6B@
 	mov	DWORD PTR __$EHRec$[ebp+8], 0
 
-; 273  : 		for(vector<Enemy*>::iterator iter = enemies.begin(); iter != enemies.end(); iter++){
+; 270  : 		for(vector<Enemy*>::iterator iter = enemies.begin(); iter != enemies.end(); iter++){
 
 	lea	eax, DWORD PTR _iter$8[ebp]
 	push	eax
@@ -21660,20 +21733,20 @@ $LN4@Enemy:
 	test	eax, eax
 	je	SHORT $LN2@Enemy
 
-; 274  : 			Enemy *item = *iter;
+; 271  : 			Enemy *item = *iter;
 
 	lea	ecx, DWORD PTR _iter$8[ebp]
 	call	??D?$_Vector_iterator@V?$_Vector_val@U?$_Simple_types@PAVEnemy@@@std@@@std@@@std@@QBEAAPAVEnemy@@XZ ; std::_Vector_iterator<std::_Vector_val<std::_Simple_types<Enemy *> > >::operator*
 	mov	eax, DWORD PTR [eax]
 	mov	DWORD PTR _item$7[ebp], eax
 
-; 275  : 			if(item == this){
+; 272  : 			if(item == this){
 
 	mov	eax, DWORD PTR _item$7[ebp]
 	cmp	eax, DWORD PTR _this$[ebp]
 	jne	SHORT $LN1@Enemy
 
-; 276  : 				enemies.erase(iter);
+; 273  : 				enemies.erase(iter);
 
 	sub	esp, 12					; 0000000cH
 	mov	ecx, esp
@@ -21690,23 +21763,23 @@ $LN4@Enemy:
 	lea	ecx, DWORD PTR $T6[ebp]
 	call	??1?$_Vector_iterator@V?$_Vector_val@U?$_Simple_types@PAVEnemy@@@std@@@std@@@std@@QAE@XZ
 
-; 277  : 				break;
+; 274  : 				break;
 
 	jmp	SHORT $LN2@Enemy
 $LN1@Enemy:
 
-; 278  : 			}
+; 275  : 			}
 
 	jmp	$LN3@Enemy
 $LN2@Enemy:
 
-; 279  : 		}
+; 276  : 		}
 
 	mov	BYTE PTR __$EHRec$[ebp+8], 0
 	lea	ecx, DWORD PTR _iter$8[ebp]
 	call	??1?$_Vector_iterator@V?$_Vector_val@U?$_Simple_types@PAVEnemy@@@std@@@std@@@std@@QAE@XZ
 
-; 280  : 	}
+; 277  : 	}
 
 	mov	DWORD PTR __$EHRec$[ebp+8], -1
 	mov	ecx, DWORD PTR _this$[ebp]
@@ -21776,7 +21849,7 @@ __$EHRec$ = -12						; size = 12
 ??0Enemy@@QAE@XZ PROC					; Enemy::Enemy, COMDAT
 ; _this$ = ecx
 
-; 269  : 	Enemy(){
+; 266  : 	Enemy(){
 
 	push	ebp
 	mov	ebp, esp
@@ -21806,7 +21879,7 @@ __$EHRec$ = -12						; size = 12
 	mov	eax, DWORD PTR _this$[ebp]
 	mov	DWORD PTR [eax], OFFSET ??_7Enemy@@6B@
 
-; 270  : 		enemies.push_back(this);
+; 267  : 		enemies.push_back(this);
 
 	mov	eax, DWORD PTR _this$[ebp]
 	mov	DWORD PTR $T2[ebp], eax
@@ -21815,7 +21888,7 @@ __$EHRec$ = -12						; size = 12
 	mov	ecx, OFFSET ?enemies@Enemy@@1V?$vector@PAVEnemy@@V?$allocator@PAVEnemy@@@std@@@std@@A ; Enemy::enemies
 	call	?push_back@?$vector@PAVEnemy@@V?$allocator@PAVEnemy@@@std@@@std@@QAEXABQAVEnemy@@@Z ; std::vector<Enemy *,std::allocator<Enemy *> >::push_back
 
-; 271  : 	}
+; 268  : 	}
 
 	mov	DWORD PTR __$EHRec$[ebp+8], -1
 	mov	eax, DWORD PTR _this$[ebp]
@@ -21932,7 +22005,7 @@ _this$ = -8						; size = 4
 ?toChar@Player@@MAEDXZ PROC				; Player::toChar, COMDAT
 ; _this$ = ecx
 
-; 262  : 	virtual char toChar(){
+; 259  : 	virtual char toChar(){
 
 	push	ebp
 	mov	ebp, esp
@@ -21948,11 +22021,11 @@ _this$ = -8						; size = 4
 	pop	ecx
 	mov	DWORD PTR _this$[ebp], ecx
 
-; 263  : 		return 'P';
+; 260  : 		return 'P';
 
 	mov	al, 80					; 00000050H
 
-; 264  : 	}
+; 261  : 	}
 
 	pop	edi
 	pop	esi
@@ -21971,7 +22044,7 @@ _amount$ = 8						; size = 4
 ?subHealth@Player@@UAEXH@Z PROC				; Player::subHealth, COMDAT
 ; _this$ = ecx
 
-; 254  : 	void subHealth(int amount){
+; 431  : void Player::subHealth(int amount){
 
 	push	ebp
 	mov	ebp, esp
@@ -21987,18 +22060,20 @@ _amount$ = 8						; size = 4
 	pop	ecx
 	mov	DWORD PTR _this$[ebp], ecx
 
-; 255  : 		color = 0x84; //1000 0100, or foreground red, background intense
+; 432  : 	gameView->setColor(0x84); //1000 0100, or foreground red, background intense
 
-	mov	BYTE PTR ?color@@3EA, 132		; color, 00000084H
+	push	132					; 00000084H
+	mov	ecx, DWORD PTR ?gameView@@3PAVScreen@@A	; gameView
+	call	?setColor@Screen@@QAEXE@Z		; Screen::setColor
 
-; 256  : 		FightingEntity::subHealth(amount);
+; 433  : 	FightingEntity::subHealth(amount);
 
 	mov	eax, DWORD PTR _amount$[ebp]
 	push	eax
 	mov	ecx, DWORD PTR _this$[ebp]
 	call	?subHealth@LivingEntity@@UAEXH@Z	; LivingEntity::subHealth
 
-; 257  : 	}
+; 434  : }
 
 	pop	edi
 	pop	esi
@@ -26410,11 +26485,11 @@ tv89 = -376						; size = 4
 tv87 = -376						; size = 4
 $T2 = -368						; size = 4
 $T3 = -356						; size = 4
-$T4 = -344						; size = 12
-$T5 = -321						; size = 1
-$T6 = -312						; size = 12
-$T7 = -292						; size = 4
-$T8 = -280						; size = 4
+$T4 = -344						; size = 4
+$T5 = -332						; size = 4
+$T6 = -320						; size = 12
+$T7 = -297						; size = 1
+$T8 = -288						; size = 12
 _item$9 = -76						; size = 4
 _iter$10 = -64						; size = 12
 _sucess$11 = -41					; size = 1
@@ -26489,16 +26564,16 @@ $LN9@renderBull:
 ; 186  : 				delete bullet;
 
 	mov	eax, DWORD PTR _bullet$12[ebp]
-	mov	DWORD PTR $T3[ebp], eax
-	mov	ecx, DWORD PTR $T3[ebp]
-	mov	DWORD PTR $T2[ebp], ecx
-	cmp	DWORD PTR $T2[ebp], 0
+	mov	DWORD PTR $T5[ebp], eax
+	mov	ecx, DWORD PTR $T5[ebp]
+	mov	DWORD PTR $T4[ebp], ecx
+	cmp	DWORD PTR $T4[ebp], 0
 	je	SHORT $LN12@renderBull
 	mov	esi, esp
 	push	1
-	mov	edx, DWORD PTR $T2[ebp]
+	mov	edx, DWORD PTR $T4[ebp]
 	mov	eax, DWORD PTR [edx]
-	mov	ecx, DWORD PTR $T2[ebp]
+	mov	ecx, DWORD PTR $T4[ebp]
 	mov	edx, DWORD PTR [eax]
 	call	edx
 	cmp	esi, esp
@@ -26525,14 +26600,14 @@ $LN6@renderBull:
 	jmp	SHORT $LN4@renderBull
 $LN3@renderBull:
 	push	0
-	lea	eax, DWORD PTR $T4[ebp]
+	lea	eax, DWORD PTR $T6[ebp]
 	push	eax
 	lea	ecx, DWORD PTR _iter$10[ebp]
 	call	??E?$_Vector_iterator@V?$_Vector_val@U?$_Simple_types@PAVLivingEntity@@@std@@@std@@@std@@QAE?AV01@H@Z ; std::_Vector_iterator<std::_Vector_val<std::_Simple_types<LivingEntity *> > >::operator++
-	lea	ecx, DWORD PTR $T4[ebp]
+	lea	ecx, DWORD PTR $T6[ebp]
 	call	??1?$_Vector_iterator@V?$_Vector_val@U?$_Simple_types@PAVLivingEntity@@@std@@@std@@@std@@QAE@XZ
 $LN4@renderBull:
-	lea	eax, DWORD PTR $T6[ebp]
+	lea	eax, DWORD PTR $T8[ebp]
 	push	eax
 	mov	ecx, OFFSET ?livingThings@LivingEntity@@2V?$vector@PAVLivingEntity@@V?$allocator@PAVLivingEntity@@@std@@@std@@A ; LivingEntity::livingThings
 	call	?end@?$vector@PAVLivingEntity@@V?$allocator@PAVLivingEntity@@@std@@@std@@QAE?AV?$_Vector_iterator@V?$_Vector_val@U?$_Simple_types@PAVLivingEntity@@@std@@@std@@@2@XZ ; std::vector<LivingEntity *,std::allocator<LivingEntity *> >::end
@@ -26544,11 +26619,11 @@ $LN4@renderBull:
 	push	edx
 	lea	ecx, DWORD PTR _iter$10[ebp]
 	call	??9?$_Vector_const_iterator@V?$_Vector_val@U?$_Simple_types@PAVLivingEntity@@@std@@@std@@@std@@QBE_NABV01@@Z ; std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<LivingEntity *> > >::operator!=
-	mov	BYTE PTR $T5[ebp], al
+	mov	BYTE PTR $T7[ebp], al
 	mov	BYTE PTR __$EHRec$[ebp+8], 0
-	lea	ecx, DWORD PTR $T6[ebp]
+	lea	ecx, DWORD PTR $T8[ebp]
 	call	??1?$_Vector_iterator@V?$_Vector_val@U?$_Simple_types@PAVLivingEntity@@@std@@@std@@@std@@QAE@XZ
-	movzx	eax, BYTE PTR $T5[ebp]
+	movzx	eax, BYTE PTR $T7[ebp]
 	test	eax, eax
 	je	$LN2@renderBull
 
@@ -26586,16 +26661,16 @@ $LN4@renderBull:
 ; 193  : 						delete bullet;
 
 	mov	eax, DWORD PTR _bullet$12[ebp]
-	mov	DWORD PTR $T8[ebp], eax
-	mov	ecx, DWORD PTR $T8[ebp]
-	mov	DWORD PTR $T7[ebp], ecx
-	cmp	DWORD PTR $T7[ebp], 0
+	mov	DWORD PTR $T3[ebp], eax
+	mov	ecx, DWORD PTR $T3[ebp]
+	mov	DWORD PTR $T2[ebp], ecx
+	cmp	DWORD PTR $T2[ebp], 0
 	je	SHORT $LN14@renderBull
 	mov	esi, esp
 	push	1
-	mov	edx, DWORD PTR $T7[ebp]
+	mov	edx, DWORD PTR $T2[ebp]
 	mov	eax, DWORD PTR [edx]
-	mov	ecx, DWORD PTR $T7[ebp]
+	mov	ecx, DWORD PTR $T2[ebp]
 	mov	edx, DWORD PTR [eax]
 	call	edx
 	cmp	esi, esp
@@ -26671,7 +26746,7 @@ __unwindfunclet$?renderBullets@Bullet@@SAXXZ$0:
 	lea	ecx, DWORD PTR _iter$10[ebp]
 	jmp	??1?$_Vector_iterator@V?$_Vector_val@U?$_Simple_types@PAVLivingEntity@@@std@@@std@@@std@@QAE@XZ
 __unwindfunclet$?renderBullets@Bullet@@SAXXZ$2:
-	lea	ecx, DWORD PTR $T6[ebp]
+	lea	ecx, DWORD PTR $T8[ebp]
 	jmp	??1?$_Vector_iterator@V?$_Vector_val@U?$_Simple_types@PAVLivingEntity@@@std@@@std@@@std@@QAE@XZ
 __ehhandler$?renderBullets@Bullet@@SAXXZ:
 	mov	edx, DWORD PTR [esp+8]
