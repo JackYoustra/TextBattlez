@@ -5,7 +5,6 @@
 #include<chrono>
 #include<thread>
 #include<pthread.h>
-#include<Windows.h>
 
 #define NUM_OF_ROWS 20
 #define NUM_OF_COLS 45
