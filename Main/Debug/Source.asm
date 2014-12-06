@@ -13566,8 +13566,8 @@ _TEXT	SEGMENT
 tv92 = -524						; size = 4
 tv208 = -520						; size = 4
 tv70 = -520						; size = 4
-tv251 = -516						; size = 4
-tv241 = -516						; size = 4
+tv252 = -516						; size = 4
+tv242 = -516						; size = 4
 tv185 = -516						; size = 4
 tv176 = -516						; size = 4
 tv163 = -516						; size = 4
@@ -13644,7 +13644,7 @@ _main	PROC						; COMDAT
 	mov	DWORD PTR $T4[ebp], esp
 	push	OFFSET ??_C@_08IDPINFPD@Player?51?$AA@
 	call	??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@PBD@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::basic_string<char,std::char_traits<char>,std::allocator<char> >
-	mov	DWORD PTR tv241[ebp], eax
+	mov	DWORD PTR tv242[ebp], eax
 	push	1
 	push	0
 	push	10					; 0000000aH
@@ -13856,11 +13856,11 @@ $LN4@main:
 	push	ecx
 	call	?getEnemies@Enemy@@SA?AV?$vector@PAVEnemy@@V?$allocator@PAVEnemy@@@std@@@std@@XZ ; Enemy::getEnemies
 	add	esp, 4
-	mov	DWORD PTR tv251[ebp], eax
+	mov	DWORD PTR tv252[ebp], eax
 	mov	edx, DWORD PTR $T19[ebp]
 	or	edx, 1
 	mov	DWORD PTR $T19[ebp], edx
-	mov	ecx, DWORD PTR tv251[ebp]
+	mov	ecx, DWORD PTR tv252[ebp]
 	call	?size@?$vector@PAVEnemy@@V?$allocator@PAVEnemy@@@std@@@std@@QBEIXZ ; std::vector<Enemy *,std::allocator<Enemy *> >::size
 	test	eax, eax
 	jbe	SHORT $LN19@main
@@ -13945,7 +13945,16 @@ $LN3@main:
 	cmp	esi, esp
 	call	__RTC_CheckEsp
 
-; 535  : 	if(player->isAlive()){
+; 535  : 	system("Color 07");
+
+	mov	esi, esp
+	push	OFFSET ??_C@_08NFNKKEKP@Color?507?$AA@
+	call	DWORD PTR __imp__system
+	add	esp, 4
+	cmp	esi, esp
+	call	__RTC_CheckEsp
+
+; 536  : 	if(player->isAlive()){
 
 	mov	ecx, DWORD PTR _player$[ebp]
 	call	?isAlive@LivingEntity@@QAE_NXZ		; LivingEntity::isAlive
@@ -13953,7 +13962,7 @@ $LN3@main:
 	test	eax, eax
 	je	SHORT $LN2@main
 
-; 536  : 		cout << "you win!";
+; 537  : 		cout << "you win!";
 
 	push	OFFSET ??_C@_08DGMLKBON@you?5win?$CB?$AA@
 	mov	eax, DWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
@@ -13961,13 +13970,13 @@ $LN3@main:
 	call	??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z ; std::operator<<<std::char_traits<char> >
 	add	esp, 8
 
-; 537  : 	}
-; 538  : 	else{
+; 538  : 	}
+; 539  : 	else{
 
 	jmp	SHORT $LN1@main
 $LN2@main:
 
-; 539  : 		cout << "you lose!";
+; 540  : 		cout << "you lose!";
 
 	push	OFFSET ??_C@_09GBKDONCB@you?5lose?$CB?$AA@
 	mov	eax, DWORD PTR __imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
@@ -13976,8 +13985,8 @@ $LN2@main:
 	add	esp, 8
 $LN1@main:
 
-; 540  : 	}
-; 541  : 	cout << endl;
+; 541  : 	}
+; 542  : 	cout << endl;
 
 	mov	esi, esp
 	mov	eax, DWORD PTR __imp_?endl@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@1@AAV21@@Z
@@ -13987,7 +13996,7 @@ $LN1@main:
 	cmp	esi, esp
 	call	__RTC_CheckEsp
 
-; 542  : 	system("pause");
+; 543  : 	system("pause");
 
 	mov	esi, esp
 	push	OFFSET ??_C@_05PDJBBECF@pause?$AA@
@@ -13996,12 +14005,12 @@ $LN1@main:
 	cmp	esi, esp
 	call	__RTC_CheckEsp
 
-; 543  : 	//pthread_join(aiThread, NULL); don't do, AI never stops
-; 544  : 	return 0;
+; 544  : 	//pthread_join(aiThread, NULL); don't do, AI never stops
+; 545  : 	return 0;
 
 	xor	eax, eax
 
-; 545  : }
+; 546  : }
 
 	push	edx
 	mov	ecx, ebp
@@ -14022,7 +14031,7 @@ $LN1@main:
 	mov	esp, ebp
 	pop	ebp
 	ret	0
-	npad	2
+	npad	3
 $LN34@main:
 	DD	1
 	DD	$LN33@main
@@ -39897,12 +39906,12 @@ __Right$ = 8						; size = 4
 ; 974  : 			if (this->_Getal() != _Right._Getal()
 ; 975  : 				&& _Alty::propagate_on_container_copy_assignment::value)
 
-	lea	eax, DWORD PTR $T1[ebp]
+	lea	eax, DWORD PTR $T2[ebp]
 	push	eax
 	mov	ecx, DWORD PTR __Right$[ebp]
 	call	?_Getal@?$_String_alloc@$0A@U?$_String_base_types@DV?$allocator@D@std@@@std@@@std@@QBE?AU?$_Wrap_alloc@V?$allocator@D@std@@@2@XZ ; std::_String_alloc<0,std::_String_base_types<char,std::allocator<char> > >::_Getal
 	push	eax
-	lea	ecx, DWORD PTR $T2[ebp]
+	lea	ecx, DWORD PTR $T3[ebp]
 	push	ecx
 	mov	ecx, DWORD PTR _this$[ebp]
 	call	?_Getal@?$_String_alloc@$0A@U?$_String_base_types@DV?$allocator@D@std@@@std@@@std@@QBE?AU?$_Wrap_alloc@V?$allocator@D@std@@@2@XZ ; std::_String_alloc<0,std::_String_base_types<char,std::allocator<char> > >::_Getal
@@ -39925,7 +39934,7 @@ __Right$ = 8						; size = 4
 
 ; 978  : 				this->_Change_alloc(_Right._Getal());
 
-	lea	eax, DWORD PTR $T3[ebp]
+	lea	eax, DWORD PTR $T1[ebp]
 	push	eax
 	mov	ecx, DWORD PTR __Right$[ebp]
 	call	?_Getal@?$_String_alloc@$0A@U?$_String_base_types@DV?$allocator@D@std@@@std@@@std@@QBE?AU?$_Wrap_alloc@V?$allocator@D@std@@@2@XZ ; std::_String_alloc<0,std::_String_base_types<char,std::allocator<char> > >::_Getal

@@ -532,6 +532,7 @@ int main(){
 		this_thread::sleep_for(chrono::milliseconds(1)); // just enough time to allow for processai
 	}
 	system("cls");
+	system("Color 07");
 	if(player->isAlive()){
 		cout << "you win!";
 	}
