@@ -1,30 +1,22 @@
-﻿Build started 10/24/2014 5:36:57 PM.
-     1>Project "C:\Users\Jack\Documents\Visual Studio 2012\Projects\Battlez\Main\Main.vcxproj" on node 2 (Build target(s)).
+﻿Build started 12/6/2014 1:48:47 PM.
+     1>Project "C:\Users\jack\Documents\Visual Studio 2012\Projects\Battelz\Main\Main.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         D:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /FAs /Fa"Debug\\" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /FR"Debug\\" /Gd /TP /analyze- /errorReport:prompt Source.cpp
+         E:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /FAs /Fa"Debug\\" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /FR"Debug\\" /Gd /TP /analyze- /errorReport:prompt Source.cpp
          Source.cpp
-     1>c:\users\jack\documents\visual studio 2012\projects\battlez\main\source.cpp(437): warning C4996: 'kbhit': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _kbhit. See online help for details.
-                 d:\program files (x86)\microsoft visual studio 11.0\vc\include\conio.h(133) : see declaration of 'kbhit'
-     1>c:\users\jack\documents\visual studio 2012\projects\battlez\main\source.cpp(438): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
-                 d:\program files (x86)\microsoft visual studio 11.0\vc\include\conio.h(131) : see declaration of 'getch'
-     1>c:\users\jack\documents\visual studio 2012\projects\battlez\main\source.cpp(465): error C2146: syntax error : missing ';' before identifier 'ai_player_mutex'
-     1>c:\users\jack\documents\visual studio 2012\projects\battlez\main\source.cpp(465): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-     1>c:\users\jack\documents\visual studio 2012\projects\battlez\main\source.cpp(465): error C2065: 'PTHREAD_MUTEX_INITIALIZER' : undeclared identifier
-     1>c:\users\jack\documents\visual studio 2012\projects\battlez\main\source.cpp(470): error C3861: 'pthread_mutex_lock': identifier not found
-     1>c:\users\jack\documents\visual studio 2012\projects\battlez\main\source.cpp(472): error C3861: 'pthread_mutex_unlock': identifier not found
-     1>c:\users\jack\documents\visual studio 2012\projects\battlez\main\source.cpp(482): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\jack\documents\visual studio 2012\projects\battlez\main\source.cpp(483): error C3861: 'pthread_mutex_lock': identifier not found
-     1>c:\users\jack\documents\visual studio 2012\projects\battlez\main\source.cpp(486): error C3861: 'pthread_mutex_unlock': identifier not found
-     1>c:\users\jack\documents\visual studio 2012\projects\battlez\main\source.cpp(521): error C2065: 'pthread_t' : undeclared identifier
-     1>c:\users\jack\documents\visual studio 2012\projects\battlez\main\source.cpp(521): error C2146: syntax error : missing ';' before identifier 'aiThread'
-     1>c:\users\jack\documents\visual studio 2012\projects\battlez\main\source.cpp(521): error C2065: 'aiThread' : undeclared identifier
-     1>c:\users\jack\documents\visual studio 2012\projects\battlez\main\source.cpp(525): error C2065: 'aiThread' : undeclared identifier
-     1>c:\users\jack\documents\visual studio 2012\projects\battlez\main\source.cpp(525): error C3861: 'pthread_create': identifier not found
-     1>c:\users\jack\documents\visual studio 2012\projects\battlez\main\source.cpp(526): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
-     1>c:\users\jack\documents\visual studio 2012\projects\battlez\main\source.cpp(528): error C3861: 'pthread_mutex_lock': identifier not found
-     1>c:\users\jack\documents\visual studio 2012\projects\battlez\main\source.cpp(532): error C3861: 'pthread_mutex_unlock': identifier not found
-     1>Done Building Project "C:\Users\Jack\Documents\Visual Studio 2012\Projects\Battlez\Main\Main.vcxproj" (Build target(s)) -- FAILED.
+     1>c:\users\jack\documents\visual studio 2012\projects\battelz\main\source.cpp(436): warning C4996: 'kbhit': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _kbhit. See online help for details.
+                 e:\program files (x86)\microsoft visual studio 11.0\vc\include\conio.h(133) : see declaration of 'kbhit'
+     1>c:\users\jack\documents\visual studio 2012\projects\battelz\main\source.cpp(437): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 e:\program files (x86)\microsoft visual studio 11.0\vc\include\conio.h(131) : see declaration of 'getch'
+     1>c:\users\jack\documents\visual studio 2012\projects\battelz\main\source.cpp(481): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\jack\documents\visual studio 2012\projects\battelz\main\source.cpp(525): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+     1>c:\users\jack\documents\visual studio 2012\projects\battelz\main\source.cpp(63): warning C4715: 'getOppositeDirection' : not all control paths return a value
+       Link:
+         E:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\jack\Documents\Visual Studio 2012\Projects\Battelz\Debug\Main.exe" /INCREMENTAL /NOLOGO pthreadVC2.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\jack\Documents\Visual Studio 2012\Projects\Battelz\Debug\Main.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\jack\Documents\Visual Studio 2012\Projects\Battelz\Debug\Main.lib" /MACHINE:X86 Debug\Source.obj
+         Main.vcxproj -> C:\Users\jack\Documents\Visual Studio 2012\Projects\Battelz\Debug\Main.exe
+       BscMake:
+         E:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\bscmake.exe /nologo /o"C:\Users\jack\Documents\Visual Studio 2012\Projects\Battelz\Debug\Main.bsc" /n Debug\Source.sbr
+     1>Done Building Project "C:\Users\jack\Documents\Visual Studio 2012\Projects\Battelz\Main\Main.vcxproj" (Build target(s)).
 
-Build FAILED.
+Build succeeded.
 
-Time Elapsed 00:00:00.63
+Time Elapsed 00:00:02.16

@@ -477,14 +477,14 @@ void* processaiwhole(void* args){ // multithread wrapper
 void* processaibysingle(void* args){ // multithread wrapper
 	Player *p = reinterpret_cast<Player*>(args);
 	while(true){
-		int numberOfEnemies = Enemy::getEnemies().size();
-		for(int i = 0; i < Enemy::getEnemies().size(); i++){
-			pthread_mutex_lock(&ai_player_mutex);
+		const int numberOfEnemies = Enemy::getEnemies().size(); // at beginning of thread
+		for(int i = 0; !(pthread_mutex_lock(&ai_player_mutex)) && i < Enemy::getEnemies().size(); i++){ // if lock was sucessful
 			Enemy* enemy = Enemy::getEnemies()[i];	
 			enemy->processAndAct(p);
 			pthread_mutex_unlock(&ai_player_mutex);
 			this_thread::sleep_for(chrono::milliseconds(AI_MILLISECOND_SPEED/numberOfEnemies));
 		}
+		pthread_mutex_unlock(&ai_player_mutex); // needed to unlock the last check
 	}
 	return NULL;
 }
