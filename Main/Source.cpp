@@ -5,6 +5,7 @@
 #include<chrono>
 #include<thread>
 #include<pthread.h>
+#include<Windows.h>
 
 #define NUM_OF_ROWS 20
 #define NUM_OF_COLS 45
@@ -15,12 +16,10 @@ using namespace std;
 /* colors
 http://www.cplusplus.com/forum/beginner/5830/
 [edit] Oh, yeah, colors are bit-encoded thus:
-
 bit 0 - foreground blue
 bit 1 - foreground green
 bit 2 - foreground red
 bit 3 - foreground intensity
-
 bit 4 - background blue
 bit 5 - background green
 bit 6 - background red
@@ -216,7 +215,19 @@ vector<Bullet*> Bullet::bullets;
 class FightingEntity : public LivingEntity{
 public:
 	int ammo, magSize;
-	virtual void shoot(Directions) = 0;
+	void makeShootSound(){
+		pthread_t soundThread;
+		if(!pthread_create(&soundThread, NULL, &FightingEntity::actuallyBeep, this));
+	}
+
+	virtual void shoot(Directions){
+		makeShootSound();
+	}
+private:
+	static void* actuallyBeep(void* context){
+		Beep(523, 500);
+		return NULL;
+	}
 };
 
 class Player : public FightingEntity{
@@ -242,6 +253,7 @@ public:
 		OnScreen::move(facing, speed);
 	}
 	void shoot(Directions dir){
+		FightingEntity::shoot(dir);
 		if(this->ammo > 0){
 			Bullet *shot = new Bullet(1, facing, this->location.x, this->location.y);
 			ammo--;
@@ -302,6 +314,7 @@ public:
 		this->magSize = magSize;
 	}
 	void shoot(Directions dir){
+		FightingEntity::shoot(dir);
 		Bullet *shot = new Bullet(1, facing, this->location.x, this->location.y);
 		ammo--;
 	}
@@ -477,14 +490,14 @@ void* processaiwhole(void* args){ // multithread wrapper
 void* processaibysingle(void* args){ // multithread wrapper
 	Player *p = reinterpret_cast<Player*>(args);
 	while(true){
-		int numberOfEnemies = Enemy::getEnemies().size();
-		for(int i = 0; i < Enemy::getEnemies().size(); i++){
-			pthread_mutex_lock(&ai_player_mutex);
+		const int numberOfEnemies = Enemy::getEnemies().size(); // at beginning of thread
+		for(int i = 0; !(pthread_mutex_lock(&ai_player_mutex)) && i < Enemy::getEnemies().size(); i++){ // if lock was sucessful
 			Enemy* enemy = Enemy::getEnemies()[i];	
 			enemy->processAndAct(p);
 			pthread_mutex_unlock(&ai_player_mutex);
 			this_thread::sleep_for(chrono::milliseconds(AI_MILLISECOND_SPEED/numberOfEnemies));
 		}
+		pthread_mutex_unlock(&ai_player_mutex); // needed to unlock the last check
 	}
 	return NULL;
 }
@@ -532,6 +545,7 @@ int main(){
 		this_thread::sleep_for(chrono::milliseconds(1)); // just enough time to allow for processai
 	}
 	system("cls");
+	system("Color 07");
 	if(player->isAlive()){
 		cout << "you win!";
 	}
