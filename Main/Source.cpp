@@ -530,7 +530,7 @@ void levelOne(Screen* screen){
 }
 
 void mainMenu(){
-	cout << "A little (glitchy) game that I made just for you. Hope you like it!" << endl << "Now, do you want (0) no colors and no lag or (1) colors and lag?" << endl << "Anything else, and it'll just be random" << endl;
+	cout << "A little game that I made just for you. Hope you like it!" << endl << "Do you want (0) no colors or (1) colors?" << endl << "Anything else, and it'll just be random" << endl;
 	cin >> colorsEnabled;
 	system("cls");
 }
