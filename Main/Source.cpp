@@ -220,8 +220,16 @@ public:
 		if(!pthread_create(&soundThread, NULL, &FightingEntity::actuallyBeep, this));
 	}
 
+	void makeReloadSound(){
+		// TODO: IMPLEMENT
+	}
+
 	virtual void shoot(Directions){
 		makeShootSound();
+	}
+
+	virtual void reload(){
+		makeReloadSound();
 	}
 private:
 	static void* actuallyBeep(void* context){
@@ -253,14 +261,19 @@ public:
 		OnScreen::move(facing, speed);
 	}
 	void shoot(Directions dir){
-		FightingEntity::shoot(dir);
 		if(this->ammo > 0){
 			Bullet *shot = new Bullet(1, facing, this->location.x, this->location.y);
 			ammo--;
+			FightingEntity::shoot(dir); // only actually shoot if this
 		}
 		else{
-			ammo = magSize;
+			// need to reload
 		}
+	}
+
+	void reload(){
+		this->ammo = this->magSize;
+		FightingEntity::reload();
 	}
 	void subHealth(int amount);
 protected:
@@ -468,6 +481,9 @@ void getInput(Player* player){
 		case ' ':
 			player->shoot(player->facing);
 			break;
+		case 'r':
+		case 'R':
+			player->reload();
 		default:
 			break;
 		}
