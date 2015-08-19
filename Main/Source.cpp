@@ -222,6 +222,8 @@ public:
 
 	void makeReloadSound(){
 		// TODO: IMPLEMENT
+		pthread_t soundThread;
+		if(!pthread_create(&soundThread, NULL, &FightingEntity::actuallyReloadSound, this));
 	}
 
 	virtual void shoot(Directions){
@@ -233,7 +235,11 @@ public:
 	}
 private:
 	static void* actuallyBeep(void* context){
-		Beep(523, 500);
+		Beep(523, 100);
+		return NULL;
+	}
+	static void* actuallyReloadSound(void* context){
+		Beep(1000, 100);
 		return NULL;
 	}
 };
